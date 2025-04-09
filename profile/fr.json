@@ -1,0 +1,215 @@
+{
+  "title": "Portfolio - Sofiane MEKSI",
+  "description": "Développeur Frontend Senior avec 9 ans d'expérience dans le web, je suis passionné par la création d'interfaces web intuitives et conviviales.",
+  "profile": {
+    "title": "Développeur Frontend Senior",
+    "alt": "Un homme souriant avec des lunettes, vêtu d'un t-shirt noire.",
+    "bookButton": "RÉSERVER UN ÉCHANGE"
+  },
+  "bio": {
+    "title": "Bio",
+    "intro": "Avec 9 ans d'expérience dans le web, j'aide les entreprises à développer des interfaces web intuitives et conviviales. Au quotidien, je pratique l'artisanat.",
+    "skills": [
+      "Je garantis que le site web est adapté aux écrans mobiles, tablettes et ordinateurs de bureau.",
+      "Je réalise des tests unitaires",
+      "Je crée des prototypes et des wireframes.",
+      "Je crée des prototypes et des wireframes."
+    ],
+    "techIntro": "Je maîtrise les technologies suivantes :",
+    "technologies": [
+      "Typescript / Angular",
+      "HTML / CSS",
+      "RxJS / NGRX",
+      "jasmine, Jest",
+      "figma, balsamiq, draw.io"
+    ],
+    "values": "Partage de connaissances, team spirit et respect mutuel sont les valeurs que je recherche dans une culture d'équipe."
+  },
+  "projects": {
+    "title": "Projets",
+    "companyDomain": "Domaine de l'entreprise",
+    "team": "Équipe",
+    "myRole": "Mon rôle",
+    "techEnv": "Environnement technique",
+    "showLess": "Afficher moins",
+    "readMore": "Lire la description complète",
+    "at": "chez",
+    "items": [
+      {
+        "role": "Développeur Frontend en CDD",
+        "company": "Scalian",
+        "period": "Fév 2024 - Avril 2024 · 3 mois",
+        "description": "Chocolatine est une solution web pour gérer les résolutions de problèmes à travers la programmation par contrainte.",
+        "team": "Équipe technique: 4 développeurs.",
+        "responsibilities": [
+          "Proposer une maquette à mettre en place pour la plateforme",
+          "Afficher et gérer les détails d'un problème",
+          "Gérer l'interfaçage avec l'api du backend."
+        ],
+        "technologies": "Angular 17, Typescript, Material Design, Figma, Git, Gitlab, Programmation par contrainte"
+      },
+      {
+        "role": "Développeur Frontend en interne",
+        "company": "ANTEMETA",
+        "period": "Avr 2020 - Août 2023 · 3 ans 5 mois",
+        "description": "Implémenter les interfaces utilisateurs des produits Antemeta.",
+        "team": "3 dev full stack + ingénieur devops + manager",
+        "responsibilities": [
+          "Wireframing et prototypage.",
+          "Développement et implémentation de features.",
+          "Rédaction des US et documentation.",
+          "Mise en place des Tests unitaires."
+        ],
+        "technologies": "Typescript, NGRX, RxJS, SCSS, Jest, Angular 14, Figma, Balsamiq, Scrum, Azure Devops."
+      },
+      {
+        "role": "Développeur frontend (consultant)",
+        "company": "IHEDN",
+        "period": "Sept 2019 - Nov 2019 · 3 mois",
+        "description": "Application mobile (iOS & ANDROID) destinée aux activités internes pour IHEDN, notification PUSH, Consultation des évènements / agenda, accès aux services depuis l’appli: espace de collaboration, Flux RSS.",
+        "team": "2 software engineers",
+        "responsibilities": [
+          "Développement de plugin (en javascript natif)",
+          "Interfaçage aux Api IHEDN existantes",
+          "Développement de scripts de crawling, alimentation de la base donnée mobile"
+        ],
+        "technologies": "Javascript, HTML, CSS, Webpack, API REST, NodeJs, VM aws, GIT, Swizi"
+      },
+      {
+        "role": "Développeur frontend (consultant)",
+        "company": "CNFPT",
+        "period": "Mars 2019 - Juil 2019 · 5 mois",
+        "description": "Portail de services, qui gère les sessions de formation des fonctionnaires de la fonction publique.",
+        "team": "9 personnes (Développeurs + SM + Testeurs QA)",
+        "responsibilities": [
+          "Réalisation en mode agile de la refonte du portail de services",
+          "Développement de la partie front de l’application",
+          "Intégration des maquettes (Responsive Design)",
+          "Propositions de composants UI (open source ou from scratch) à mettre en place dans l’application web",
+          "Correction des anomalies visuelles",
+          "Démonstration devant le comité de direction sur la partie réalisée pendant une itération."
+        ],
+        "technologies": "Angular 5, HTML 5, SCSS, Bootstrap 4, Git, Gitlab-ci, Jenkins, Redmine."
+      },
+      {
+        "role": "Développeur frontend (consultant)",
+        "company": "Groupe RENAULT",
+        "period": "Juil 2018 - Jan 2019 · 7 mois",
+        "description": "La solution SMART CO2 permet de générer une fiche gamme commerciale de véhicules optimisées, en terme de taux d’émission de CO2.",
+        "team": "5 personnes (Développeurs + SM + Testeurs QA)",
+        "responsibilities": [
+          "Mettre en place l’architecture front.",
+          "Création de composants et services.",
+          "Proposer des librairies et technos front.",
+          "Implémentation du système d’authentification OPENID."
+        ],
+        "technologies": "Angular 6, REST API, OPENID, CSS, Typescript, PrimeNG, Karma, Jasmine unit test, Gitlab CI, Scrum"
+      },
+      {
+        "role": "Développeur frontend",
+        "company": "Elsevier Masson",
+        "period": "Nov 2017 - Jan 2018 · 3 mois",
+        "description": "eBroncho - Une application hybride (Android, iOS) de Listing des Descripteurs de Maladies Respiratoires, servant comme référence dans le domaine de la bronchoscopie.",
+        "team": "4 personnes (Développeurs + SM + Testeurs QA)",
+        "responsibilities": [
+          "Intégration du design",
+          "Création de nouveau composants",
+          "Gestion des images (slider, adaptation des différent ratios)",
+          "Gestion de session utilisateur (connexion, déconnexion, création de compte)",
+          "Responsive Design"
+        ],
+        "technologies": "Angular, IONIC3, Dexie JS, Web View, SASS, Material Design, Git"
+      },
+      {
+        "role": "Développeur frontend",
+        "company": "expersi",
+        "period": "Sept 2017 - Nov 2017 · 3 mois",
+        "description": "myHR - Une application de gestion des ressources humaines: plannings d'équipes, demandes d'absences.",
+        "team": "4 personnes (Développeurs + SM + Testeurs QA)",
+        "responsibilities": [
+          "Intégration du design",
+          "Création de nouveau composants",
+          "Adaptation des plugins",
+          "Responsive Design"
+        ],
+        "technologies": "AngularJS, Progressive Web App, Single Web App, FullCalendar.js plugin, CSS, Material Design, Git"
+      },
+      {
+        "role": "Développeur frontend",
+        "company": "Eiffage construction",
+        "period": "Mars 2017 - Sept 2017 · 7 mois",
+        "description": "Une application de gestion des rapports de sécurité auprès des chantiers de construction de la société Eiffage.",
+        "team": "12 personnes (Développeurs + SM + Testeurs QA)",
+        "responsibilities": [
+          "Intégration du design",
+          "Création de nouveaux composants UI.",
+          "Développement de la partie statistiques et graphiques d'analyses",
+          "Automatisation des tâches de compilation des scripts et styles"
+        ],
+        "technologies": "Twig, Symphony3, Jquery, Bootstrap, CSS3, D3.js, Gulp, Git, SCSS"
+      },
+      {
+        "role": "Intégrateur web",
+        "company": "Chapeau de paille",
+        "period": "Oct 2016 - Mars 2017 · 6 mois",
+        "description": "Intranet chlorofil - espace de gestion des collectes, un lien d'échange et de collaboration des membres du GIE.",
+        "team": "7 personnes (Développeurs + SM + Testeurs QA)",
+        "responsibilities": [
+          "Intégration du design",
+          "Suivi et maintenance du design",
+          "Développement de la partie consultation et visualisation des graphiques d'analyses",
+          "Automatisation des tâches de compilation des scripts et styles"
+        ],
+        "technologies": "Twig, Symphony2, Jquery, Bootstrap, CSS3, Highchart, Gulp, Git, Scrum, SCSS"
+      },
+      {
+        "role": "Intégrateur web",
+        "company": "La gravelline",
+        "period": "Juil 2016 - Oct 2016 · 4 mois",
+        "description": "La gravelline.com - Un site ecommerce pour vente de produits à base de plantes biologiques.",
+        "team": "3 personnes (Développeurs + SM + Testeurs QA)",
+        "responsibilities": [
+          "Conversion de PSD vers thème Wordpress",
+          "Développement des plugins Woocommerce modification",
+          "Intégration du Système de payement",
+          "Implémentation de Code Promo",
+          "Implémentation des différentes formules de livraison"
+        ],
+        "technologies": "Wordpress, PHP, jQuery, CSS, thèmes / plugins Wordpress, passerelle de paiement, Git, méthodologie Scrum"
+      },
+      {
+        "role": "Développeur fullstack (freelance)",
+        "company": "DimaTech",
+        "period": "Jan 2016 - Juin 2016 · 6 mois",
+        "description": "Un répertoire de pages Facebook en moyen orient",
+        "team": "2 personnes (Développeur + Project Manager)",
+        "responsibilities": [
+          "Réalisation de la partie back office basé sur Php5, MVC, Registry pattern",
+          "Réalisation de la partie Front",
+          "Extraction des données à partir de l'API de Facebook"
+        ],
+        "technologies": "PHP5 natif, Registry pattern, architecture MVC, MySQL, jQuery, CSS3, Bootstrap, Google Analytics, Facebook Events, Google Adsense"
+      },
+      {
+        "role": "Développeur web Freelance",
+        "company": "Freelance",
+        "period": "Jan 2014 - Jan 2016 · 2 ans",
+        "description": "Développement de sites web et applications web en freelance.",
+        "team": "N/A",
+        "responsibilities": [
+          "Site Web pour agent immobiliers (Wordpress, PHP)",
+          "Dashboard suivi campagnes marketing (PHP, MySQL, jQuery)",
+          "Intégration Facebook Social login, Facebook API get user Data info (PHP, jQuery, Javascript)",
+          "Développement de plugins Wordpress (CMS)",
+          "Développement Web en PHP native et dashboard monitoring (PHP, jQuery)",
+          "Déploiement Sites Web, Installation serveurs mail (Ubuntu, Cron, Shell)"
+        ],
+        "technologies": "jQuery, Wordpress, PHP5, MySQL, Facebook API, Javascript, script shell, cron jobs, Basic Network skills"
+      }
+    ]
+  },
+  "cta": {
+    "message": "Je suis recruteur, j'ai déjà un poste qui match avec tes compétences.",
+    "button": "RÉSERVER UN ÉCHANGE"
+  }
+}
