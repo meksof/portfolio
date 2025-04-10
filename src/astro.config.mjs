@@ -7,4 +7,7 @@ export default defineConfig({
         // Explicitly ignore favicon.ico
         '/favicon.ico': '/favicon.ico', // Forces Astro to treat it as static
     },
+    experimental: {
+        middleware: true
+    }
 });

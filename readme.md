@@ -47,8 +47,9 @@ pnpm dev
     - navigate to page interaction.
     - Manage utm source (add extra params when sharing your portfolio url, ex: me.dev/?urm_source=linkedin)
 - [ ] Add multilangual capabilites.
-    - [ ] language switcher
-    - [ ] add middleware to redirect user to the corresponding lang web page, based on the browser language setting.
+    - [x] language switcher
+    - [x] add logic to redirect user to the corresponding lang web page, based on the browser language setting.
+    ex: mywebsite.com/ -> mywebsite.com/en
 - [ ] Add projects page according to the mockup.
 - [ ] Add sticky header to home page according to the mockup.
 - [ ] Add "read full description/ show less" button interaction.
