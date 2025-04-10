@@ -16,14 +16,17 @@ const bio = Astro.props.bio;
             <li>{skill}</li>
             ))}
         </ul>
+        <br>
         <p>
             {bio.techIntro}
         </p>
+        <br>
         <ul class="font-inherit text-inherit pl-[1.312rem] list-disc list-inside">
             {bio.technologies.map(techItem => (
             <li>{techItem}</li>
             ))}
         </ul>
+        <br>
         <p>
             {bio.values}
         </p>
