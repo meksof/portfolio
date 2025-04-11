@@ -3,14 +3,15 @@ import type { Certification } from "@entities/profile";
 
 interface Props {
     certification: Certification;
+    index: number;
 }
 
-const { certification } = Astro.props;
+const { certification, index } = Astro.props;
 ---
 
 <!-- Certification Item -->
 <div
-    class="flex flex-wrap justify-center items-center w-full max-md:max-w-full"
+    class=`flex flex-wrap justify-center items-center w-full max-md:max-w-full ${index > 0 ? 'mt-4': ''}`
 >
     <img
         src={certification.imageSrc}
