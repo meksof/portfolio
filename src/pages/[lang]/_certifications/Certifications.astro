@@ -28,7 +28,7 @@ const {certifications} = Astro.props
             class="flex flex-wrap flex-1 shrink gap-2 justify-center 
             items-center py-4 basis-0 min-w-60 size-full max-md:max-w-full
             hover:bg-[#e8e7ff]"
-            href="/certifications"
+            href={`/${Astro.params.lang}/certifications`}
         >
             <span class="self-stretch my-auto">Show all 8 certifications</span>
             <img
