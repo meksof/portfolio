@@ -1,10 +1,10 @@
 {
   "title": "Portfolio - Sofiane MEKSI",
   "description": "Développeur Frontend Senior avec 9 ans d'expérience dans le web, je suis passionné par la création d'interfaces web intuitives et conviviales.",
-  "profile": {
+  "userCard": {
     "title": "Développeur Frontend Senior",
     "alt": "Un homme souriant avec des lunettes, vêtu d'un t-shirt noire.",
-    "bookButton": "RÉSERVER UN ÉCHANGE"
+    "name": "Sofiane MEKSI"
   },
   "bio": {
     "title": "Bio",
@@ -66,7 +66,7 @@
         "role": "Développeur frontend (consultant)",
         "company": "IHEDN",
         "period": "Sept 2019 - Nov 2019 · 3 mois",
-        "description": "Application mobile (iOS & ANDROID) destinée aux activités internes pour IHEDN, notification PUSH, Consultation des évènements / agenda, accès aux services depuis l’appli: espace de collaboration, Flux RSS.",
+        "description": "Application mobile (iOS & ANDROID) destinée aux activités internes pour IHEDN, notification PUSH, Consultation des évènements / agenda, accès aux services depuis l'appli: espace de collaboration, Flux RSS.",
         "team": "2 software engineers",
         "responsibilities": [
           "Développement de plugin (en javascript natif)",
@@ -83,9 +83,9 @@
         "team": "9 personnes (Développeurs + SM + Testeurs QA)",
         "responsibilities": [
           "Réalisation en mode agile de la refonte du portail de services",
-          "Développement de la partie front de l’application",
+          "Développement de la partie front de l'application",
           "Intégration des maquettes (Responsive Design)",
-          "Propositions de composants UI (open source ou from scratch) à mettre en place dans l’application web",
+          "Propositions de composants UI (open source ou from scratch) à mettre en place dans l'application web",
           "Correction des anomalies visuelles",
           "Démonstration devant le comité de direction sur la partie réalisée pendant une itération."
         ],
@@ -95,13 +95,13 @@
         "role": "Développeur frontend (consultant)",
         "company": "Groupe RENAULT",
         "period": "Juil 2018 - Jan 2019 · 7 mois",
-        "description": "La solution SMART CO2 permet de générer une fiche gamme commerciale de véhicules optimisées, en terme de taux d’émission de CO2.",
+        "description": "La solution SMART CO2 permet de générer une fiche gamme commerciale de véhicules optimisées, en terme de taux d'émission de CO2.",
         "team": "5 personnes (Développeurs + SM + Testeurs QA)",
         "responsibilities": [
-          "Mettre en place l’architecture front.",
+          "Mettre en place l'architecture front.",
           "Création de composants et services.",
           "Proposer des librairies et technos front.",
-          "Implémentation du système d’authentification OPENID."
+          "Implémentation du système d'authentification OPENID."
         ],
         "technologies": "Angular 6, REST API, OPENID, CSS, Typescript, PrimeNG, Karma, Jasmine unit test, Gitlab CI, Scrum"
       },

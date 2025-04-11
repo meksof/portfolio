@@ -1,5 +1,5 @@
 import { defineMiddleware } from 'astro/middleware';
-import { languages } from './utils/paths.js';
+import { availableLanguages } from '@utils/language.ts';
 export const onRequest = defineMiddleware(async (context, next) => {
     // Only process the root path
     if (context.url.pathname === '/') {
@@ -9,7 +9,7 @@ export const onRequest = defineMiddleware(async (context, next) => {
         // Parse the Accept-Language header
         const preferredLanguages = acceptLanguage.split(',')
             .map(lang => lang.split(';')[0].trim().split('-')[0])
-            .filter(lang => languages.includes(lang));
+            .filter((lang: string) => (availableLanguages as string[]).includes(lang));
 
         // Get the target language (first supported language or default to 'en')
         const targetLang = preferredLanguages.length > 0 ? preferredLanguages[0] : 'en';

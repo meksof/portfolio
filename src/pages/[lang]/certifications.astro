@@ -1,9 +1,9 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-// i18n
-import { languages } from '../../utils/paths.js';
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { availableLanguages } from '@utils/language.ts';
+
 export async function getStaticPaths() {
-  return languages.map(lang => ({ params: { lang } }));
+  return availableLanguages.map(lang => ({ params: { lang } }));
 }
 ---
 

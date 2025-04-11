@@ -1,4 +1,9 @@
 ---
+import type { Bio } from "src/entities/profile";
+
+interface Props {
+    bio: Bio
+}
 const bio = Astro.props.bio;
 ---
 <!-- Bio Section -->

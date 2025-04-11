@@ -1,10 +1,10 @@
 {
   "title": "Sofiane MEKSI - Portfolio",
   "description": "Portfolio of Sofiane MEKSI, a Senior Frontend Developer with 9 years of experience in web development.",
-  "profile": {
+  "userCard": {
     "title": "Senior Frontend Developer",
     "alt": "a man with glasses, wearing a black t-shirt, smiling at the camera",
-    "bookButton": "BOOK A CALL"
+    "name": "Sofiane MEKSI"
   },
   "bio": {
     "title": "Bio",
