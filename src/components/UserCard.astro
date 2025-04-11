@@ -5,8 +5,10 @@ interface Props {
     userCard: UserCard
     cta: CTA
 }
-const userCard = Astro.props.userCard;
-const cta = Astro.props.cta;
+const {
+    userCard,
+    cta
+} = Astro.props;
 ---
 <!-- User Profile Card -->
 <aside

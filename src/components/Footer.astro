@@ -1,13 +1,21 @@
+---
+import type { CTA } from "src/entities/profile"
+
+interface Props {
+    cta: CTA
+}
+const { cta } = Astro.props
+---
 <!-- Footer Section -->
 <footer
     class="flex flex-col justify-center items-center mt-4 w-full font-bold text-center min-h-[200px] max-md:max-w-full"
 >
     <p class="text-base text-gray-700 max-md:max-w-full">
-        Je suis recruteur, j'ai déjà un poste qui match avec tes compétences.
+        {cta.message}
     </p>
     <button
         class="gap-2.5 px-3 py-2.5 mt-10 max-w-full text-base leading-relaxed text-white bg-[#6C3CE9] hover:bg-[#5B32C7] rounded-md min-h-11 w-[232px] max-sm:self-center"
     >
-        RÉSERVER UN CRÉNEAU
+        {cta.button}
     </button>
 </footer>
