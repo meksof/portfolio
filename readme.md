@@ -46,7 +46,7 @@ pnpm dev
     - cta button clicked.
     - navigate to page interaction.
     - Manage utm source (add extra params when sharing your portfolio url, ex: me.dev/?urm_source=linkedin)
-- [ ] Add multilangual capabilites.
+- [x] Add multilangual capabilites.
     - [x] language switcher
     - [x] add logic to redirect user to the corresponding lang web page, based on the browser language setting.
     ex: mywebsite.com/ -> mywebsite.com/en
@@ -57,3 +57,6 @@ pnpm dev
     - [ ] Use [image component](https://docs.astro.build/en/guides/images/)
 - [ ] Add social media metadata (highlighted image, description)
 - [ ] make the user card sticky
+- [ ] Update projects section.
+    - [ ] fill the content from data source (en/fr.json)
+    - [ ] make sure footer section link is referenring to the projects page
