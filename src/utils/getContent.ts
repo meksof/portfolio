@@ -1,4 +1,4 @@
-import type { Profile } from "src/entities/profile";
+import type { Profile } from "@entities/profile";
 import type { Language } from "./language";
 
 export async function getContent(lang: Language): Promise<Profile> {

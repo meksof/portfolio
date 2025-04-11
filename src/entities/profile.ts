@@ -13,7 +13,7 @@ export interface UserCard {
     values: string;
   }
   
-  export interface ProjectItem {
+  export interface Project {
     role: string;
     company: string;
     period: string;
@@ -32,12 +32,24 @@ export interface UserCard {
     showLess: string;
     readMore: string;
     at: string;
-    items: ProjectItem[];
+    items: Project[];
   }
   
   export interface CTA {
     message: string;
     button: string;
+  }
+  
+  export interface Certification {
+    imageSrc: string;
+    title: string;
+    issuer: string;
+    issuedDate: string;
+  }
+
+  export interface Certifications {
+    title: string;
+    items: Certification[];
   }
   
   export interface Profile {
@@ -47,4 +59,5 @@ export interface UserCard {
     bio: Bio;
     projects: Projects;
     cta: CTA;
+    certifications: Certifications;
   }

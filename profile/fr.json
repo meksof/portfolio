@@ -211,5 +211,46 @@
   "cta": {
     "message": "Je suis recruteur, j'ai déjà un poste qui match avec tes compétences.",
     "button": "RÉSERVER UN ÉCHANGE"
+  },
+  "certifications": {
+    "title": "Certifications",
+    "items": [
+      {
+        "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09",
+        "title": "UX Design Patterns with Checklist Design",
+        "issuer": "Uxcel",
+        "issuedDate": "Issued Dec 2024"
+      },
+      {
+        "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09",
+        "title": "UX Design Patterns with Checklist Design",
+        "issuer": "Uxcel",
+        "issuedDate": "Issued Dec 2024"
+      },
+      {
+        "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09",
+        "title": "UX Design Patterns with Checklist Design",
+        "issuer": "Uxcel",
+        "issuedDate": "Issued Dec 2024"
+      },
+      {
+        "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09",
+        "title": "Blah blah blah",
+        "issuer": "Uxcel",
+        "issuedDate": "Issued Dec 2024"
+      },
+      {
+        "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09",
+        "title": "Mastering simplicity",
+        "issuer": "HiRez.io",
+        "issuedDate": "Issued Dec 2024"
+      },
+      {
+        "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09",
+        "title": "Advanced Blah blah",
+        "issuer": "HiRez.io",
+        "issuedDate": "Issued Dec 2024"
+      }
+    ]
   }
 }

@@ -30,7 +30,9 @@ const profile = await getContent(lang);
 
           <Projects projects={profile.projects} />
 
-          <Certifications />
+          <Certifications 
+            certifications={profile.certifications} 
+          />
 
           <Footer cta={profile.cta} />
         </section>

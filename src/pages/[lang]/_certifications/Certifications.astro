@@ -1,65 +1,23 @@
 ---
 import CertificationItem from "./CertificationItem.astro";
+import type {Certifications} from "@entities/profile";
+
+interface Props {
+    certifications: Certifications
+}
+const {certifications} = Astro.props
 ---
 
 <!-- Certifications Section -->
 <article
     class="px-16 py-8 mt-4 w-full bg-white rounded-3xl max-sm:border-none border border-solid border-gray-950 border-opacity-10 max-md:px-5 max-md:max-w-full"
 >
-    <h2 class="font-bold text-3xl leading-tight text-gray-900">Certifications</h2>
+    <h2 class="font-bold text-3xl leading-tight text-gray-900">{certifications.title}</h2>
 
     <div class="mt-6 w-full max-md:max-w-full">
-        <CertificationItem />
-
-        <!-- Certification 2 -->
-        <div
-            class="flex flex-wrap justify-center items-center mt-4 w-full max-md:max-w-full"
-        >
-            <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/07874d36e0435b160cd208dfa4fc9e5142cc67e6?placeholderIfAbsent=true&apiKey=d16caa26bca646eaacef0153851189d4"
-                alt="Certification logo"
-                class="object-contain overflow-hidden shrink-0 self-stretch my-auto w-16 aspect-square"
-            />
-            <div
-                class="flex flex-col flex-1 shrink justify-center self-stretch px-6 my-auto basis-0 min-w-60 max-md:px-5 max-md:max-w-full"
-            >
-                <h3
-                    class="text-lg font-bold leading-none text-black whitespace-nowrap text-ellipsis max-md:max-w-full"
-                >
-                    UX Design Patterns with Checklist Design
-                </h3>
-                <p class="text-base text-gray-900 max-md:max-w-full">Uxcel</p>
-                <p class="text-sm leading-6 text-gray-600 max-md:max-w-full">
-                    Issued Dec 2024
-                </p>
-            </div>
-        </div>
-
-        <!-- Certification 3 -->
-        <div
-            class="flex flex-wrap justify-center items-center mt-4 w-full max-md:max-w-full"
-        >
-            <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/07874d36e0435b160cd208dfa4fc9e5142cc67e6?placeholderIfAbsent=true&apiKey=d16caa26bca646eaacef0153851189d4"
-                alt="Certification logo"
-                class="object-contain overflow-hidden shrink-0 self-stretch my-auto w-16 aspect-square"
-            />
-            <div
-                class="flex flex-col flex-1 shrink justify-center self-stretch px-6 my-auto basis-0 min-w-60 max-md:px-5 max-md:max-w-full"
-            >
-                <h3
-                    class="text-lg font-bold leading-none text-black whitespace-nowrap text-ellipsis max-md:max-w-full"
-                >
-                    Effective Angular Testing
-                </h3>
-                <p class="text-base text-gray-900 max-md:max-w-full">
-                    HiRez.io
-                </p>
-                <p class="text-sm leading-6 text-gray-600 max-md:max-w-full">
-                    Issued Dec 2024
-                </p>
-            </div>
-        </div>
+        {certifications.items.map((certification) => (
+            <CertificationItem certification={certification} />
+        ))}
     </div>
 
     <!-- Certifications Footer -->
