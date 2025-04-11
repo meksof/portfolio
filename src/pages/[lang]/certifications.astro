@@ -1,5 +1,10 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { availableLanguages } from '@utils/language.ts';
+
+export async function getStaticPaths() {
+  return availableLanguages.map(lang => ({ params: { lang } }));
+}
 ---
 
 <BaseLayout title="Sofiane MEKSI - Portfolio">

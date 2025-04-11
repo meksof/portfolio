@@ -1,0 +1,41 @@
+---
+import CertificationItem from "./CertificationItem.astro";
+import type {Certifications} from "@entities/profile";
+
+interface Props {
+    certifications: Certifications
+}
+const {certifications} = Astro.props
+---
+
+<!-- Certifications Section -->
+<article
+    class="px-16 py-8 mt-4 w-full bg-white rounded-3xl max-sm:border-none border border-solid border-gray-950 border-opacity-10 max-md:px-5 max-md:max-w-full"
+>
+    <h2 class="font-bold text-3xl leading-tight text-gray-900">{certifications.title}</h2>
+
+    <div class="mt-6 w-full max-md:max-w-full">
+        {certifications.items.map((certification, index) => (
+            <CertificationItem certification={certification} index={index} />
+        ))}
+    </div>
+
+    <!-- Certifications Footer -->
+    <div
+        class="flex gap-2.5 justify-center font-bold mt-6 w-full text-base text-indigo-600 max-md:max-w-full"
+    >
+        <a
+            class="flex flex-wrap flex-1 shrink gap-2 justify-center 
+            items-center py-4 basis-0 min-w-60 size-full max-md:max-w-full
+            hover:bg-[#e8e7ff]"
+            href={`/${Astro.params.lang}/certifications`}
+        >
+            <span class="self-stretch my-auto">Show all 8 certifications</span>
+            <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/55f423bc1427a1f86bf9a5fc2f991546d08a9f5c?placeholderIfAbsent=true&apiKey=d16caa26bca646eaacef0153851189d4"
+                alt="Arrow down"
+                class="object-contain overflow-hidden shrink-0 self-stretch my-auto aspect-square w-[18px]"
+            />
+        </a>
+    </div>
+</article>

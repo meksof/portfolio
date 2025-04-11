@@ -1,31 +1,10 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import LanguageSwitcher from '../components/LanguageSwitcher.astro';
-import UserCard from '../components/UserCard.astro';
-import Bio from '../components/Bio.astro';
-import Projects from '../components/projects/Projects.astro';
-import Footer from '../components/Footer.astro';
-import Certifications from '../components/certifications/Certifications.astro';
+export const prerender = false;
 ---
-<BaseLayout title="Sofiane MEKSI - Portfolio">
-    <main
-      class="flex overflow-hidden flex-col px-24 py-16 max-md:px-5 max-sm:-mr-1 max-sm:bg-white max-w-[1088px] mx-auto"
-    >
-      <LanguageSwitcher />
 
-      <div class="flex flex-wrap gap-4 items-start w-full max-md:max-w-full">
-        <UserCard />
-
-        <!-- Main Content -->
-        <section class="flex-1 shrink basis-8 min-w-60 max-md:max-w-full">
-          <Bio />
-
-          <Projects />
-
-          <Certifications />
-
-          <Footer />
-        </section>
-      </div>
-    </main>
-</BaseLayout>
+<div class="flex items-center justify-center min-h-screen">
+  <div class="text-center">
+    <h1 class="text-2xl font-bold mb-4">Redirecting...</h1>
+    <p class="text-gray-600">Please wait while we redirect you to your preferred language.</p>
+  </div>
+</div> 

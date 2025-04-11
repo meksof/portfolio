@@ -1,25 +1,37 @@
+---
+import type { CTA, UserCard } from 'src/entities/profile';
+
+interface Props {
+    userCard: UserCard
+    cta: CTA
+}
+const {
+    userCard,
+    cta
+} = Astro.props;
+---
 <!-- User Profile Card -->
 <aside
     class="flex overflow-hidden flex-col items-center px-4 py-9 text-center bg-white rounded-3xl max-sm:border-none border border-solid border-gray-950 border-opacity-10 min-w-60 w-[270px] max-sm:w-full"
 >
     <img
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/7242446aff7651eaf482a43cd728af70794df684?placeholderIfAbsent=true&apiKey=d16caa26bca646eaacef0153851189d4"
-        alt="Sofiane MEKSI profile picture"
+        alt={userCard.alt}
         class="object-contain overflow-hidden w-32 max-w-full aspect-square"
     />
     <div class="mt-10 max-w-full max-sm:w-full">
         <h1
             class="text-3xl font-bold leading-none text-gray-900 max-sm:mr-5 max-sm:w-full"
         >
-            Sofiane MEKSI
+            {userCard.name}
         </h1>
         <p class="mt-2 text-sm leading-none text-gray-700">
-            Développeur Frontend Senior
+            {userCard.title}
         </p>
     </div>
     <button
         class="gap-2.5 self-stretch px-3 py-2.5 mt-10 w-full text-base font-bold leading-relaxed text-white bg-[#6C3CE9] hover:bg-[#5B32C7] rounded-md min-h-11"
     >
-        RÉSERVER UN CRÉNEAU
+        {cta.button}
     </button>
 </aside>

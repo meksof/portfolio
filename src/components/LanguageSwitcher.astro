@@ -1,19 +1,26 @@
+---
+import { LanguageEnum } from "@utils/language";
 
+const { lang } = Astro.props;
+---
+<!-- Language switcher -->
 <header
     class="flex gap-3 items-center self-end mt-6 mb-4 text-lg font-bold leading-none whitespace-nowrap max-sm:self-center"
 >
-    <button
-        class="self-stretch my-auto text-gray-900"
+    <a
+        class=`self-stretch my-auto text-gray-900 ${lang === LanguageEnum.EN ? '' : 'opacity-60'}`
         aria-pressed="true"
         id="lang-en"
+        href="/en/"
     >
         EN
-    </button>
-    <button
-        class="self-stretch my-auto text-gray-600 opacity-60"
+    </a>
+    <a
+        class=`self-stretch my-auto text-gray-600  ${lang === LanguageEnum.FR ? '' : 'opacity-60'}`
         aria-pressed="false"
         id="lang-fr"
+        href="/fr/"
     >
         FR
-    </button>
+    </a>
 </header>
