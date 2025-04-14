@@ -1,120 +1,37 @@
 ---
 import ProjectItem from "./ProjectItem.astro";
+import type { Projects } from "@entities/profile";
+
+interface Props {
+    projects: Projects
+}
+const { projects } = Astro.props;
 ---
 
 <!-- Projects Section -->
 <article
     class="px-16 py-8 mt-4 w-full bg-white rounded-3xl max-sm:border-none border border-solid border-gray-950 border-opacity-10 max-md:px-5 max-md:max-w-full"
 >
-    <h2 class="text-3xl font-bold leading-tight text-gray-900">Projets</h2>
+    <h2 class="text-3xl font-bold leading-tight text-gray-900">{projects.title}</h2>
 
-    <ProjectItem />
-
-    <!-- Project 2 -->
-    <div class="mt-6 w-full max-md:max-w-full">
-        <div
-            class="flex flex-wrap gap-4 items-center w-full whitespace-nowrap max-md:max-w-full"
-        >
-            <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/3fcffb75b958a59cc2427cd21de3dd00f1b88dc4?placeholderIfAbsent=true&apiKey=d16caa26bca646eaacef0153851189d4"
-                alt="Company logo"
-                class="object-contain overflow-hidden shrink-0 self-center mx-auto my-0 w-16 aspect-square"
-            />
-            <div
-                class="flex flex-col flex-1 shrink justify-center self-stretch my-auto basis-0 min-w-60 max-md:max-w-full"
-            >
-                <h3
-                    class="text-lg font-bold leading-none text-gray-900 text-ellipsis max-md:max-w-full"
-                >
-                    Frontend developer at ANTEMETA
-                </h3>
-                <p
-                    class="text-base text-gray-600 text-ellipsis max-md:max-w-full"
-                >
-                    Apr 2020 - Aug 2023 · 3 years 5 months
-                </p>
-            </div>
-        </div>
-        <div
-            class="flex flex-wrap gap-4 items-center mt-2 w-full max-md:max-w-full project-description"
-        >
-            <div class="flex shrink-0 self-stretch my-auto w-16 h-10"></div>
-            <div
-                class="flex-1 shrink self-stretch my-auto basis-0 min-w-60 max-md:max-w-full"
-            >
-                <p class="text-base text-gray-700 max-md:max-w-full">
-                    A short description about the project context...
-                </p>
-                <button
-                    class="mt-2 text-sm text-indigo-600 max-md:max-w-full read-more"
-                    aria-expanded="false"
-                >
-                    Read full description
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="mt-6 w-full max-md:max-w-full">
-        <div
-            class="flex flex-wrap gap-4 items-center w-full whitespace-nowrap max-md:max-w-full"
-        >
-            <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/3fcffb75b958a59cc2427cd21de3dd00f1b88dc4?placeholderIfAbsent=true&apiKey=d16caa26bca646eaacef0153851189d4"
-                alt="Company logo"
-                class="object-contain overflow-hidden shrink-0 self-center mx-auto my-0 w-16 aspect-square"
-            />
-            <div
-                class="flex flex-col flex-1 shrink justify-center self-stretch my-auto basis-0 min-w-60 max-md:max-w-full"
-            >
-                <h3
-                    class="text-lg font-bold leading-none text-gray-900 text-ellipsis max-md:max-w-full"
-                >
-                    Frontend developer at ANTEMETA
-                </h3>
-                <p
-                    class="text-base text-gray-600 text-ellipsis max-md:max-w-full"
-                >
-                    Apr 2020 - Aug 2023 · 3 years 5 months
-                </p>
-            </div>
-        </div>
-        <div
-            class="flex flex-wrap gap-4 items-center mt-2 w-full max-md:max-w-full project-description"
-        >
-            <div class="flex shrink-0 self-stretch my-auto w-16 h-10"></div>
-            <div
-                class="flex-1 shrink self-stretch my-auto basis-0 min-w-60 max-md:max-w-full"
-            >
-                <p class="text-base text-gray-700 max-md:max-w-full">
-                    A short description about the project context...
-                </p>
-                <button
-                    class="mt-2 text-sm text-indigo-600 max-md:max-w-full read-more"
-                    aria-expanded="false"
-                >
-                    Read full description
-                </button>
-            </div>
-        </div>
-    </div>
+    {projects.items.slice(0, 3).map((project) => (
+        <ProjectItem project={project} readMoreText={projects.readMore} />
+    ))}
 
     <!-- Projects Footer -->
     <div
         class="flex justify-center items-center mt-6 w-full text-base font-bold text-indigo-600 max-md:max-w-full"
     >
-        <button
-            class="flex flex-wrap flex-1 shrink gap-2 justify-center items-center self-stretch py-4 my-auto w-full basis-0 min-w-60 max-md:max-w-full"
-            id="show-all-projects"
-            aria-expanded="false"
+        <a
+            class="flex flex-wrap flex-1 shrink gap-2 justify-center items-center self-stretch py-4 my-auto w-full basis-0 min-w-60 max-md:max-w-full hover:bg-[#e8e7ff]"
+            href={`/${Astro.params.lang}/projects`}
         >
-            <span class="self-stretch my-auto">Show all 8 experiences</span>
+            <span class="self-stretch my-auto">{projects.showAll.replace('%i', projects.items.length.toString())}</span>
             <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/55f423bc1427a1f86bf9a5fc2f991546d08a9f5c?placeholderIfAbsent=true&apiKey=d16caa26bca646eaacef0153851189d4"
                 alt="Arrow down"
                 class="object-contain overflow-hidden shrink-0 self-stretch my-auto aspect-square w-[18px]"
             />
-        </button>
+        </a>
     </div>
 </article>
