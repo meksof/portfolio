@@ -1,0 +1,31 @@
+---
+import Header from "@components/header.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { availableLanguages } from '@utils/language.ts';
+import ProjectItem from "./_projects/ProjectItem.astro";
+
+export async function getStaticPaths() {
+  return availableLanguages.map(lang => ({ params: { lang } }));
+}
+---
+<BaseLayout title="Sofiane MEKSI - Portfolio">
+    <div class="flex flex-col min-h-screen bg-white">
+        <Header title="Projects" />
+
+        <!-- Main content -->
+        <main class="flex flex-1 pb-24">
+            <div
+                class="w-[120px] max-md:w-[60px] max-sm:hidden"
+                aria-hidden="true"
+            >
+            </div>
+            <section
+                class="flex flex-col flex-1 gap-4 px-0 py-9 max-w-[1091px] max-sm:p-5"
+            >
+                { [1,2,3].map((project) => (
+                    <ProjectItem />
+                )) }
+            </section>
+        </main>
+    </div>
+</BaseLayout>

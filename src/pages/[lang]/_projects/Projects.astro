@@ -104,10 +104,9 @@ import ProjectItem from "./ProjectItem.astro";
     <div
         class="flex justify-center items-center mt-6 w-full text-base font-bold text-indigo-600 max-md:max-w-full"
     >
-        <button
-            class="flex flex-wrap flex-1 shrink gap-2 justify-center items-center self-stretch py-4 my-auto w-full basis-0 min-w-60 max-md:max-w-full"
-            id="show-all-projects"
-            aria-expanded="false"
+        <a
+            class="flex flex-wrap flex-1 shrink gap-2 justify-center items-center self-stretch py-4 my-auto w-full basis-0 min-w-60 max-md:max-w-full hover:bg-[#e8e7ff]"
+            href={`/${Astro.params.lang}/projects`}
         >
             <span class="self-stretch my-auto">Show all 8 experiences</span>
             <img
@@ -115,6 +114,6 @@ import ProjectItem from "./ProjectItem.astro";
                 alt="Arrow down"
                 class="object-contain overflow-hidden shrink-0 self-stretch my-auto aspect-square w-[18px]"
             />
-        </button>
+        </a>
     </div>
 </article>

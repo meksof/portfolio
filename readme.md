@@ -50,7 +50,7 @@ pnpm dev
     - [x] language switcher
     - [x] add logic to redirect user to the corresponding lang web page, based on the browser language setting.
     ex: mywebsite.com/ -> mywebsite.com/en
-- [ ] Add projects page according to the mockup.
+- [x] Add projects page according to the mockup.
 - [ ] Add sticky header to home page according to the mockup.
 - [ ] Add "read full description/ show less" button interaction.
 - [ ] Enhance website performance:
