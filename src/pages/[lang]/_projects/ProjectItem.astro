@@ -4,8 +4,9 @@ import type { Project } from "@entities/profile";
 interface Props {
     project: Project;
     readMoreText: string;
+    showLessText: string;
 }
-const { project, readMoreText } = Astro.props;
+const { project, readMoreText, showLessText } = Astro.props;
 ---
 
 <!-- Project Item -->
@@ -32,21 +33,58 @@ const { project, readMoreText } = Astro.props;
         </div>
     </div>
     <div
-        class="flex flex-wrap gap-4 items-center mt-2 w-full max-md:max-w-full project-description"
+        class="flex flex-wrap gap-4 items-start mt-2 w-full max-md:max-w-full project-description"
     >
         <div class="flex shrink-0 self-stretch my-auto w-16 h-10"></div>
         <div
-            class="flex-1 shrink self-stretch my-auto basis-0 min-w-60 max-md:max-w-full"
+            class="flex-1 shrink self-stretch basis-0 min-w-60 max-md:max-w-full"
         >
-            <p class="text-base text-gray-700 max-md:max-w-full">
+            <p class="text-base text-gray-700 max-md:max-w-full line-clamp-1 expanded:line-clamp-none">
                 {project.description}
             </p>
+            <div class="hidden expanded:block mt-4 space-y-4">
+                <div>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        {project.responsibilities.map(responsibility => (
+                            <li>{responsibility}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div>
+                    {project.technologies.map((t) => (
+                        <span class="text-bold">{t}, </span>
+                    ))}
+                </div>
+            </div>
             <button
-                class="mt-2 text-sm text-indigo-600 max-md:max-w-full read-more"
+                class="mt-2 text-sm text-indigo-600 hover:text-indigo-700 transition-colors read-more"
                 aria-expanded="false"
             >
-                {readMoreText}
+                <span class="expanded:hidden">{readMoreText}</span>
+                <span class="hidden expanded:inline">{showLessText}</span>
             </button>
         </div>
     </div>
 </div>
+
+<style>
+    .project-description:has(.read-more[aria-expanded="true"]) {
+        .expanded\:block { display: block; }
+        .expanded\:inline { display: inline; }
+        .expanded\:line-clamp-none { -webkit-line-clamp: unset; }
+        .expanded\:hidden { display: none; }
+    }
+</style>
+
+<script>
+    // Find all read more buttons
+    const readMoreButtons = document.querySelectorAll('.read-more');
+
+    // Add click handler to each button
+    readMoreButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', (!expanded).toString());
+        });
+    });
+</script>

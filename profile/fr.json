@@ -47,7 +47,16 @@
           "Afficher et gérer les détails d'un problème",
           "Gérer l'interfaçage avec l'api du backend."
         ],
-        "technologies": "Angular 17, Typescript, Material Design, Figma, Git, Gitlab, Programmation par contrainte"
+        "technologies": [
+          "Angular 17",
+          "Typescript",
+          "Material Design",
+          "Figma",
+          "Git",
+          "Gitlab",
+          "Java",
+          "Spring Boot"
+        ]
       },
       {
         "role": "Développeur Frontend en interne",
@@ -61,7 +70,18 @@
           "Rédaction des US et documentation.",
           "Mise en place des Tests unitaires."
         ],
-        "technologies": "Typescript, NGRX, RxJS, SCSS, Jest, Angular 14, Figma, Balsamiq, Scrum, Azure Devops."
+        "technologies": [
+          "Typescript",
+          "NGRX",
+          "RxJS",
+          "SCSS",
+          "Jest",
+          "Angular 14",
+          "Figma",
+          "Balsamiq",
+          "Scrum",
+          "Azure Devops"
+        ]
       },
       {
         "role": "Développeur frontend (consultant)",
@@ -74,7 +94,17 @@
           "Interfaçage aux Api IHEDN existantes",
           "Développement de scripts de crawling, alimentation de la base donnée mobile"
         ],
-        "technologies": "Javascript, HTML, CSS, Webpack, API REST, NodeJs, VM aws, GIT, Swizi"
+        "technologies": [
+          "Javascript",
+          "HTML",
+          "CSS",
+          "Webpack",
+          "API REST",
+          "NodeJs",
+          "VM aws",
+          "GIT",
+          "Swizi"
+        ]
       },
       {
         "role": "Développeur frontend (consultant)",
@@ -90,7 +120,16 @@
           "Correction des anomalies visuelles",
           "Démonstration devant le comité de direction sur la partie réalisée pendant une itération."
         ],
-        "technologies": "Angular 5, HTML 5, SCSS, Bootstrap 4, Git, Gitlab-ci, Jenkins, Redmine."
+        "technologies": [
+          "Angular 5",
+          "HTML 5",
+          "SCSS",
+          "Bootstrap 4",
+          "Git",
+          "Gitlab-ci",
+          "Jenkins",
+          "Redmine"
+        ]
       },
       {
         "role": "Développeur frontend (consultant)",
@@ -99,12 +138,23 @@
         "description": "La solution SMART CO2 permet de générer une fiche gamme commerciale de véhicules optimisées, en terme de taux d'émission de CO2.",
         "team": "5 personnes (Développeurs + SM + Testeurs QA)",
         "responsibilities": [
-          "Mettre en place l'architecture front.",
-          "Création de composants et services.",
-          "Proposer des librairies et technos front.",
-          "Implémentation du système d'authentification OPENID."
+          "Mise en place de la structure du projet front, des outils, et de la chaine d'intégration continue pour la partie front.",
+          "Développement de composants (from scratch, ou à partir de librairies open source existantes).",
+          "Propositions de librairies et technologies front-end.",
+          "Mise en place du système d'authentification OPENID."
         ],
-        "technologies": "Angular 6, REST API, OPENID, CSS, Typescript, PrimeNG, Karma, Jasmine unit test, Gitlab CI, Scrum"
+        "technologies": [
+          "Angular 6",
+          "REST API",
+          "OPENID",
+          "CSS",
+          "typescript",
+          "primeNg",
+          "Karma",
+          "jasmine unit test",
+          "gitlabci",
+          "Scrum"
+        ]
       },
       {
         "role": "Développeur frontend",
@@ -119,7 +169,15 @@
           "Gestion de session utilisateur (connexion, déconnexion, création de compte)",
           "Responsive Design"
         ],
-        "technologies": "Angular, IONIC3, Dexie JS, Web View, SASS, Material Design, Git"
+        "technologies": [
+          "Angular",
+          "IONIC3",
+          "Dexie JS",
+          "Web View",
+          "SASS",
+          "Material Design",
+          "Git"
+        ]
       },
       {
         "role": "Développeur frontend",
@@ -133,7 +191,15 @@
           "Adaptation des plugins",
           "Responsive Design"
         ],
-        "technologies": "AngularJS, Progressive Web App, Single Web App, FullCalendar.js plugin, CSS, Material Design, Git"
+        "technologies": [
+          "AngularJS",
+          "Progressive Web App",
+          "Single Web App",
+          "FullCalendar.js plugin",
+          "CSS",
+          "Material Design",
+          "Git"
+        ]
       },
       {
         "role": "Développeur frontend",
@@ -147,7 +213,17 @@
           "Développement de la partie statistiques et graphiques d'analyses",
           "Automatisation des tâches de compilation des scripts et styles"
         ],
-        "technologies": "Twig, Symphony3, Jquery, Bootstrap, CSS3, D3.js, Gulp, Git, SCSS"
+        "technologies": [
+          "Twig",
+          "Symphony3",
+          "Jquery",
+          "Bootstrap",
+          "CSS3",
+          "D3.js",
+          "Gulp",
+          "Git",
+          "SCSS"
+        ]
       },
       {
         "role": "Intégrateur web",
@@ -161,7 +237,18 @@
           "Développement de la partie consultation et visualisation des graphiques d'analyses",
           "Automatisation des tâches de compilation des scripts et styles"
         ],
-        "technologies": "Twig, Symphony2, Jquery, Bootstrap, CSS3, Highchart, Gulp, Git, Scrum, SCSS"
+        "technologies": [
+          "Twig",
+          "Symphony2",
+          "Jquery",
+          "Bootstrap",
+          "CSS3",
+          "Highchart",
+          "Gulp",
+          "Git",
+          "Scrum",
+          "SCSS"
+        ]
       },
       {
         "role": "Intégrateur web",
@@ -176,7 +263,16 @@
           "Implémentation de Code Promo",
           "Implémentation des différentes formules de livraison"
         ],
-        "technologies": "Wordpress, PHP, jQuery, CSS, thèmes / plugins Wordpress, passerelle de paiement, Git, méthodologie Scrum"
+        "technologies": [
+          "Wordpress",
+          "PHP",
+          "jQuery",
+          "CSS",
+          "thèmes / plugins Wordpress",
+          "passerelle de paiement",
+          "Git",
+          "méthodologie Scrum"
+        ]
       },
       {
         "role": "Développeur fullstack (freelance)",
@@ -189,7 +285,18 @@
           "Réalisation de la partie Front",
           "Extraction des données à partir de l'API de Facebook"
         ],
-        "technologies": "PHP5 natif, Registry pattern, architecture MVC, MySQL, jQuery, CSS3, Bootstrap, Google Analytics, Facebook Events, Google Adsense"
+        "technologies": [
+          "PHP5 natif",
+          "Registry pattern",
+          "architecture MVC",
+          "MySQL",
+          "jQuery",
+          "CSS3",
+          "Bootstrap",
+          "Google Analytics",
+          "Facebook Events",
+          "Google Adsense"
+        ]
       },
       {
         "role": "Développeur web Freelance",
@@ -205,7 +312,17 @@
           "Développement Web en PHP native et dashboard monitoring (PHP, jQuery)",
           "Déploiement Sites Web, Installation serveurs mail (Ubuntu, Cron, Shell)"
         ],
-        "technologies": "jQuery, Wordpress, PHP5, MySQL, Facebook API, Javascript, script shell, cron jobs, Basic Network skills"
+        "technologies": [
+          "jQuery",
+          "Wordpress",
+          "PHP5",
+          "MySQL",
+          "Facebook API",
+          "Javascript",
+          "script shell",
+          "cron jobs",
+          "Basic Network skills"
+        ]
       }
     ]
   },

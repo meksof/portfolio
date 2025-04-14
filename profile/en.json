@@ -47,7 +47,16 @@
           "Display and manage problem details",
           "Handle interfacing with the backend API."
         ],
-        "technologies": "Angular 17, Typescript, Material Design, Figma, Git, Gitlab, Java, Spring Boot"
+        "technologies": [
+          "Angular 17",
+          "Typescript",
+          "Material Design",
+          "Figma",
+          "Git",
+          "Gitlab",
+          "Java",
+          "Spring Boot"
+        ]
       },
       {
         "role": "Front-end developer",
@@ -61,7 +70,17 @@
           "Make sure of code quality by following SOLID principles and implementing Unit tests",
           "Code review and peer to peer programming."
         ],
-        "technologies": "Typescript, NGRX, RxJS, SCSS, Jest, Angular 11, wireframe tools, Scrum, Azure Devops."
+        "technologies": [
+          "Typescript",
+          "NGRX",
+          "RxJS",
+          "SCSS",
+          "Jest",
+          "Angular 11",
+          "wireframe tools",
+          "Scrum",
+          "Azure Devops"
+        ]
       },
       {
         "role": "Web developer (as consultant)",
@@ -74,7 +93,17 @@
           "Interfacing with existing IHEDN APIs",
           "Implement Crawling scripts."
         ],
-        "technologies": "Javascript, HTML, CSS, webpack, API REST, NodeJS, VM aws, GIT, Swizi"
+        "technologies": [
+          "Javascript",
+          "HTML",
+          "CSS",
+          "webpack",
+          "API REST",
+          "NodeJS",
+          "VM aws",
+          "GIT",
+          "Swizi"
+        ]
       },
       {
         "role": "Front-end developer (as consultant)",
@@ -89,7 +118,16 @@
           "Fixing of visual bugs",
           "Presenting demo to the client at the end of the sprint iteration."
         ],
-        "technologies": "Angular 5, HTML 5, SCSS, Bootstrap 4, Git, Gitlab-ci, Jenkins, Redmine"
+        "technologies": [
+          "Angular 5",
+          "HTML 5",
+          "SCSS",
+          "Bootstrap 4",
+          "Git",
+          "Gitlab-ci",
+          "Jenkins",
+          "Redmine"
+        ]
       },
       {
         "role": "Front-end developer (as consultant)",
@@ -103,7 +141,18 @@
           "Suggest libraries and front-end technologies.",
           "OPENID authentication system implementation."
         ],
-        "technologies": "Angular 6, REST API, OPENID, CSS, typescript, primeNg, Karma, jasmine unit test, gitlabci, Scrum"
+        "technologies": [
+          "Angular 6",
+          "REST API",
+          "OPENID",
+          "CSS",
+          "typescript",
+          "primeNg",
+          "Karma",
+          "jasmine unit test",
+          "gitlabci",
+          "Scrum"
+        ]
       },
       {
         "role": "Front-end developer",
@@ -118,7 +167,15 @@
           "User session management (sign-in, sign-out, registration)",
           "Visual bug fixing on almost all iOS and Android existing devices"
         ],
-        "technologies": "Angular v3, IONIC3, Dexie JS, Web View, SASS, Material Design, git"
+        "technologies": [
+          "Angular v3",
+          "IONIC3",
+          "Dexie JS",
+          "Web View",
+          "SASS",
+          "Material Design",
+          "git"
+        ]
       },
       {
         "role": "Front-end developer",
@@ -131,7 +188,15 @@
           "Developing new components",
           "Existing UI plugins adaptation"
         ],
-        "technologies": "AngularJS, Progressive Web App, Single Web App, fullCalendar.js plugin, CSS, Material Design, git"
+        "technologies": [
+          "AngularJS",
+          "Progressive Web App",
+          "Single Web App",
+          "fullCalendar.js plugin",
+          "CSS",
+          "Material Design",
+          "git"
+        ]
       },
       {
         "role": "Front-end developer",
@@ -145,7 +210,18 @@
           "Implementing Graphs for analysis and data visualization",
           "Making automated scripts for generating project bundles using Gulp."
         ],
-        "technologies": "Twig, Symphony2, Jquery, Bootstrap, CSS3, Highchart, gulp, git, Scrum, Sass"
+        "technologies": [
+          "Twig",
+          "Symphony2",
+          "Jquery",
+          "Bootstrap",
+          "CSS3",
+          "Highchart",
+          "gulp",
+          "git",
+          "Scrum",
+          "Sass"
+        ]
       },
       {
         "role": "Web developer",
@@ -160,7 +236,16 @@
           "Promotional code plugin implementation",
           "Implementing a multitude of shipment methods"
         ],
-        "technologies": "Wordpress, PHP, jQuery, Css, themes / wordpress plugins, payment gateway, Git, Scrum Methodology"
+        "technologies": [
+          "Wordpress",
+          "PHP",
+          "jQuery",
+          "CSS",
+          "themes / wordpress plugins",
+          "payment gateway",
+          "Git",
+          "Scrum Methodology"
+        ]
       },
       {
         "role": "Front-end developer",
@@ -174,7 +259,17 @@
           "Stats and graph UI development",
           "Automating scripts and style compilation tasks using gulp"
         ],
-        "technologies": "Twig, Symphony3, Jquery, Bootstrap, CSS3, D3.js, gulp, git, Sass"
+        "technologies": [
+          "Twig",
+          "Symphony3",
+          "Jquery",
+          "Bootstrap",
+          "CSS3",
+          "D3.js",
+          "gulp",
+          "git",
+          "Sass"
+        ]
       },
       {
         "role": "Fullstack web developer",
@@ -187,7 +282,18 @@
           "Front-office development",
           "User Data extraction from Facebook API"
         ],
-        "technologies": "PHP5, Registry pattern, MVC architecture, mysql, jquery, CSS3, Bootstrap, google analytics, Facebook events, Google Adsense"
+        "technologies": [
+          "PHP5",
+          "Registry pattern",
+          "MVC architecture",
+          "mysql",
+          "jquery",
+          "CSS3",
+          "Bootstrap",
+          "google analytics",
+          "Facebook events",
+          "Google Adsense"
+        ]
       },
       {
         "role": "Web developer",
@@ -203,7 +309,17 @@
           "Native PHP development and dashboard monitoring systems (PHP, jQuery)",
           "Websites deployment, mail servers installing / setups (Ubuntu, cron, shell)"
         ],
-        "technologies": "jQuery, Wordpress, PHP5, MySQL, Facebook API, Javascript, script shell, cron jobs, Basic Network skills"
+        "technologies": [
+          "jQuery",
+          "Wordpress",
+          "PHP5",
+          "MySQL",
+          "Facebook API",
+          "Javascript",
+          "script shell",
+          "cron jobs",
+          "Basic Network skills"
+        ]
       }
     ]
   },
