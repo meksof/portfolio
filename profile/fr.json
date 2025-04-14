@@ -34,6 +34,7 @@
     "showLess": "Afficher moins",
     "readMore": "Lire la description complète",
     "at": "chez",
+    "showAll": "Afficher tous les %i projets",
     "items": [
       {
         "role": "Développeur Frontend en CDD",

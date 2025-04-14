@@ -3,14 +3,19 @@ import Header from "@components/header.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { availableLanguages } from '@utils/language.ts';
 import ProjectItem from "./_projects/ProjectItem.astro";
+import { getContent } from '@utils/getContent.ts';
 
 export async function getStaticPaths() {
   return availableLanguages.map(lang => ({ params: { lang } }));
 }
+
+const { lang } = Astro.params;
+const profile = await getContent(lang);
 ---
-<BaseLayout title="Sofiane MEKSI - Portfolio">
+
+<BaseLayout title={profile.title} lang={lang}>
     <div class="flex flex-col min-h-screen bg-white">
-        <Header title="Projects" />
+        <Header title={profile.projects.title} />
 
         <!-- Main content -->
         <main class="flex flex-1 pb-24">
@@ -22,9 +27,9 @@ export async function getStaticPaths() {
             <section
                 class="flex flex-col flex-1 gap-4 px-0 py-9 max-w-[1091px] max-sm:p-5"
             >
-                { [1,2,3].map((project) => (
-                    <ProjectItem />
-                )) }
+                {profile.projects.items.map((project) => (
+                    <ProjectItem project={project} readMoreText={profile.projects.readMore} />
+                ))}
             </section>
         </main>
     </div>

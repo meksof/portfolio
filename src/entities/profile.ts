@@ -32,6 +32,7 @@ export interface UserCard {
     showLess: string;
     readMore: string;
     at: string;
+    showAll: string;
     items: Project[];
   }
   
