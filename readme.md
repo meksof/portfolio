@@ -52,7 +52,7 @@ pnpm dev
     ex: mywebsite.com/ -> mywebsite.com/en
 - [x] Add projects page according to the mockup.
 - [ ] Add sticky header to home page according to the mockup.
-- [ ] Add "read full description/ show less" button interaction.
+- [x] Add "read full description/ show less" button interaction.
 - [ ] Enhance website performance:
     - [ ] Use [image component](https://docs.astro.build/en/guides/images/)
 - [ ] Add social media metadata (highlighted image, description)
