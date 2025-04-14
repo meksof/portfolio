@@ -15,7 +15,11 @@ const { projects } = Astro.props;
     <h2 class="text-3xl font-bold leading-tight text-gray-900">{projects.title}</h2>
 
     {projects.items.slice(0, 3).map((project) => (
-        <ProjectItem project={project} readMoreText={projects.readMore} />
+        <ProjectItem 
+            project={project} 
+            readMoreText={projects.readMore}
+            showLessText={projects.showLess}
+        />
     ))}
 
     <!-- Projects Footer -->

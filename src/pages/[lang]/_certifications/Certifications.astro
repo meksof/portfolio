@@ -14,7 +14,7 @@ const {certifications} = Astro.props
 >
     <h2 class="font-bold text-3xl leading-tight text-gray-900">{certifications.title}</h2>
 
-    <div class="mt-6 w-full max-md:max-w-full">
+    <div class="flex flex-col gap-4 mt-6 w-full max-md:max-w-full">
         {certifications.items.map((certification, index) => (
             <CertificationItem certification={certification} index={index} />
         ))}

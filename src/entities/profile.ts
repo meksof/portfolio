@@ -20,7 +20,7 @@ export interface UserCard {
     description: string;
     team: string;
     responsibilities: string[];
-    technologies: string;
+    technologies: string[];
   }
   
   export interface Projects {

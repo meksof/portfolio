@@ -1,16 +1,20 @@
 ---
-import Header from "@components/header.astro";
+import Header from "@components/Header.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { availableLanguages } from '@utils/language.ts';
+import { getContent } from '@utils/getContent.ts';
 
 export async function getStaticPaths() {
   return availableLanguages.map(lang => ({ params: { lang } }));
 }
+
+const { lang } = Astro.params;
+const profile = await getContent(lang);
 ---
 
-<BaseLayout title="Sofiane MEKSI - Portfolio">
+<BaseLayout title={profile.title}>
     <div class="flex flex-col min-h-screen bg-white">
-        <Header title="Certifications" />
+        <Header title={profile.certifications.title} />
 
         <!-- Main content -->
         <main class="flex flex-1 pb-24">
@@ -22,173 +26,34 @@ export async function getStaticPaths() {
             <section
                 class="flex flex-col flex-1 gap-4 px-0 py-9 max-w-[1091px] max-sm:p-5"
             >
-                <!-- Certification Item 1 -->
-                <article class="flex items-center w-full">
-                    <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09"
-                        alt="Certification icon"
-                        class="shrink-0 w-16 h-16"
-                    />
-                    <div
-                        class="flex flex-col flex-1 px-6 py-0 max-sm:px-3 max-sm:py-0"
-                    >
-                        <h2
-                            class="overflow-hidden text-lg font-bold leading-7 text-black whitespace-nowrap text-ellipsis max-sm:text-base max-sm:leading-6"
+                {profile.certifications.items.map((certification) => (
+                    <article class="flex items-center w-full">
+                        <img
+                            src={certification.imageSrc}
+                            alt={`${certification.title} icon`}
+                            class="shrink-0 w-16 h-16"
+                        />
+                        <div
+                            class="flex flex-col flex-1 px-6 py-0 max-sm:px-3 max-sm:py-0"
                         >
-                            UX Design Patterns with Checklist Design
-                        </h2>
-                        <p
-                            class="text-base leading-6 text-gray-900 max-sm:text-sm max-sm:leading-5"
-                        >
-                            Uxcel
-                        </p>
-                        <p
-                            class="text-sm leading-6 text-gray-600 max-sm:text-xs max-sm:leading-5"
-                        >
-                            Issued Dec 2024
-                        </p>
-                    </div>
-                </article>
-
-                <!-- Certification Item 2 -->
-                <article class="flex items-center w-full">
-                    <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09"
-                        alt="Certification icon"
-                        class="shrink-0 w-16 h-16"
-                    />
-                    <div
-                        class="flex flex-col flex-1 px-6 py-0 max-sm:px-3 max-sm:py-0"
-                    >
-                        <h2
-                            class="overflow-hidden text-lg font-bold leading-7 text-black whitespace-nowrap text-ellipsis max-sm:text-base max-sm:leading-6"
-                        >
-                            UX Design Patterns with Checklist Design
-                        </h2>
-                        <p
-                            class="text-base leading-6 text-gray-900 max-sm:text-sm max-sm:leading-5"
-                        >
-                            Uxcel
-                        </p>
-                        <p
-                            class="text-sm leading-6 text-gray-600 max-sm:text-xs max-sm:leading-5"
-                        >
-                            Issued Dec 2024
-                        </p>
-                    </div>
-                </article>
-
-                <!-- Certification Item 3 -->
-                <article class="flex items-center w-full">
-                    <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09"
-                        alt="Certification icon"
-                        class="shrink-0 w-16 h-16"
-                    />
-                    <div
-                        class="flex flex-col flex-1 px-6 py-0 max-sm:px-3 max-sm:py-0"
-                    >
-                        <h2
-                            class="overflow-hidden text-lg font-bold leading-7 text-black whitespace-nowrap text-ellipsis max-sm:text-base max-sm:leading-6"
-                        >
-                            UX Design Patterns with Checklist Design
-                        </h2>
-                        <p
-                            class="text-base leading-6 text-gray-900 max-sm:text-sm max-sm:leading-5"
-                        >
-                            Uxcel
-                        </p>
-                        <p
-                            class="text-sm leading-6 text-gray-600 max-sm:text-xs max-sm:leading-5"
-                        >
-                            Issued Dec 2024
-                        </p>
-                    </div>
-                </article>
-
-                <!-- Certification Item 4 -->
-                <article class="flex items-center w-full">
-                    <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09"
-                        alt="Certification icon"
-                        class="shrink-0 w-16 h-16"
-                    />
-                    <div
-                        class="flex flex-col flex-1 px-6 py-0 max-sm:px-3 max-sm:py-0"
-                    >
-                        <h2
-                            class="overflow-hidden text-lg font-bold leading-7 text-black whitespace-nowrap text-ellipsis max-sm:text-base max-sm:leading-6"
-                        >
-                            Blah blah blah
-                        </h2>
-                        <p
-                            class="text-base leading-6 text-gray-900 max-sm:text-sm max-sm:leading-5"
-                        >
-                            Uxcel
-                        </p>
-                        <p
-                            class="text-sm leading-6 text-gray-600 max-sm:text-xs max-sm:leading-5"
-                        >
-                            Issued Dec 2024
-                        </p>
-                    </div>
-                </article>
-
-                <!-- Certification Item 5 -->
-                <article class="flex items-center w-full">
-                    <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09"
-                        alt="Certification icon"
-                        class="shrink-0 w-16 h-16"
-                    />
-                    <div
-                        class="flex flex-col flex-1 px-6 py-0 max-sm:px-3 max-sm:py-0"
-                    >
-                        <h2
-                            class="overflow-hidden text-lg font-bold leading-7 text-black whitespace-nowrap text-ellipsis max-sm:text-base max-sm:leading-6"
-                        >
-                            Mastering simplicity
-                        </h2>
-                        <p
-                            class="text-base leading-6 text-gray-900 max-sm:text-sm max-sm:leading-5"
-                        >
-                            HiRez.io
-                        </p>
-                        <p
-                            class="text-sm leading-6 text-gray-600 max-sm:text-xs max-sm:leading-5"
-                        >
-                            Issued Dec 2024
-                        </p>
-                    </div>
-                </article>
-
-                <!-- Certification Item 6 -->
-                <article class="flex items-center w-full">
-                    <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09"
-                        alt="Certification icon"
-                        class="shrink-0 w-16 h-16"
-                    />
-                    <div
-                        class="flex flex-col flex-1 px-6 py-0 max-sm:px-3 max-sm:py-0"
-                    >
-                        <h2
-                            class="overflow-hidden text-lg font-bold leading-7 text-black whitespace-nowrap text-ellipsis max-sm:text-base max-sm:leading-6"
-                        >
-                            Advanced Blah blah
-                        </h2>
-                        <p
-                            class="text-base leading-6 text-gray-900 max-sm:text-sm max-sm:leading-5"
-                        >
-                            HiRez.io
-                        </p>
-                        <p
-                            class="text-sm leading-6 text-gray-600 max-sm:text-xs max-sm:leading-5"
-                        >
-                            Issued Dec 2024
-                        </p>
-                    </div>
-                </article>
+                            <h2
+                                class="overflow-hidden text-lg font-bold text-black whitespace-nowrap text-ellipsis max-sm:text-base max-sm:leading-6"
+                            >
+                                {certification.title}
+                            </h2>
+                            <p
+                                class="text-base leading-6 text-gray-900 max-sm:text-sm max-sm:leading-5"
+                            >
+                                {certification.issuer}
+                            </p>
+                            <p
+                                class="text-sm leading-6 text-gray-600 max-sm:text-xs max-sm:leading-5"
+                            >
+                                {certification.issuedDate}
+                            </p>
+                        </div>
+                    </article>
+                ))}
             </section>
         </main>
     </div>
