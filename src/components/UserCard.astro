@@ -9,6 +9,7 @@ const {
     userCard,
     cta
 } = Astro.props;
+const calendlyUrl = import.meta.env.NEXT_PUBLIC_CALENDLY_URL;
 ---
 <!-- User Profile Card -->
 <aside
@@ -29,9 +30,11 @@ const {
             {userCard.title}
         </p>
     </div>
-    <button
+    <a
         class="gap-2.5 self-stretch px-3 py-2.5 mt-10 w-full text-base font-bold leading-relaxed text-white bg-[#6C3CE9] hover:bg-[#5B32C7] rounded-md min-h-11"
+        href={calendlyUrl}
+        target="_blank"
     >
         {cta.button}
-    </button>
+    </a>
 </aside>

@@ -940,12 +940,12 @@ video {
   padding-bottom: 6rem;
 }
 
-.pl-\[1\.312rem\] {
-  padding-left: 1.312rem;
-}
-
 .pl-5 {
   padding-left: 1.25rem;
+}
+
+.pl-\[1\.312rem\] {
+  padding-left: 1.312rem;
 }
 
 .text-center {
@@ -979,10 +979,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .leading-6 {
