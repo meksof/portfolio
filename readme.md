@@ -54,8 +54,8 @@ pnpm dev
 - [ ] Add sticky header to home page according to the mockup.
 - [x] Add "read full description/ show less" button interaction.
 - [ ] Update image sources for:
-    - projects
-    - certifications
+    - [x] projects
+    - [ ] certifications
 - [ ] Enhance website performance:
     - [ ] Use [image component](https://docs.astro.build/en/guides/images/)
 - [ ] Add social media metadata (highlighted image, description)

@@ -12,10 +12,15 @@ export interface UserCard {
     technologies: string[];
     values: string;
   }
+
+  export interface Company {
+    label: string;
+    imageUrl: string;
+  }
   
   export interface Project {
     role: string;
-    company: string;
+    company: Company;
     period: string;
     description: string;
     team: string;
@@ -40,11 +45,16 @@ export interface UserCard {
     message: string;
     button: string;
   }
+
+  export interface Issuer {
+    label: string;
+    imageUrl: string;
+  }
   
   export interface Certification {
     imageSrc: string;
     title: string;
-    issuer: string;
+    issuer: Issuer;
     issuedDate: string;
   }
 

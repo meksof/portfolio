@@ -38,7 +38,10 @@
     "items": [
       {
         "role": "Frontend Developer (Fixed-term contract)",
-        "company": "Scalian",
+        "company": {
+          "label": "Scalian",
+          "imageUrl": "/images/companies/scalian.jpg"
+        },
         "period": "Feb 2024 - Apr 2024 · 3 months",
         "description": "Chocolatine is a web solution for managing problem solving through constraint programming.",
         "team": "technical team: 4 developers.",
@@ -60,7 +63,10 @@
       },
       {
         "role": "Front-end developer",
-        "company": "ANTEMETA",
+        "company": {
+          "label": "ANTEMETA",
+          "imageUrl": "/images/companies/antemeta.jpg"
+        },
         "period": "Avr 2020 - Août 2023 · 3 years 5 months",
         "description": "Desktop web application for managing Cloud computing and backup services.",
         "team": "3 full stack dev + devops engineer + manager",
@@ -84,7 +90,10 @@
       },
       {
         "role": "Web developer (as consultant)",
-        "company": "IHEDN",
+        "company": {
+          "label": "IHEDN",
+          "imageUrl": "/images/companies/jeunes_ihedn.jpg"
+        },
         "period": "Sept 2019 - Nov 2019 · 3 months",
         "description": "Mobile application (IOS & ANDROID) for internal activities in IHEDN, PUSH notification, Event / calendar consultation, access to services from the app: collaboration area, RSS feeds.",
         "team": "2 full time developers + interactions with the SWIZI product team",
@@ -107,7 +116,10 @@
       },
       {
         "role": "Front-end developer (as consultant)",
-        "company": "CNFPT",
+        "company": {
+          "label": "CNFPT",
+          "imageUrl": "/images/companies/cnfpt.jpg"
+        },
         "period": "Mars 2019 - Juil 2019 · 5 months",
         "description": "Training session management solution for education officials.",
         "team": "9 teammates (Developers + SM + QA Tester)",
@@ -131,7 +143,10 @@
       },
       {
         "role": "Front-end developer (as consultant)",
-        "company": "Groupe RENAULT",
+        "company": {
+          "label": "Groupe RENAULT",
+          "imageUrl": "/images/companies/renault.jpg"
+        },
         "period": "Juil 2018 - Jan 2019 · 7 months",
         "description": "Smart CO2 project goal is to optimize cars configuration, based on CO2 emission rate.",
         "team": "5 teammates (Developers + SM + QA Testers)",
@@ -156,7 +171,10 @@
       },
       {
         "role": "Front-end developer",
-        "company": "Elsevier Masson",
+        "company": {
+          "label": "Mobelite",
+          "imageUrl": "/images/companies/mobelite.jpg"
+        },
         "period": "Nov 2017 - Jan 2018 · 3 months",
         "description": "eBroncho, A hybrid application (Android, iOS) of Listing of Respiratory Disease Descriptors, being as a reference in the field of bronchoscopy.",
         "team": "4 teammates (Developers + SM + QA Testers)",
@@ -179,7 +197,10 @@
       },
       {
         "role": "Front-end developer",
-        "company": "myHR",
+        "company": {
+          "label": "Mobelite",
+          "imageUrl": "/images/companies/mobelite.jpg"
+        },
         "period": "Sept 2017 - Nov 2017 · 3 months",
         "description": "myHR, A human resources management application: teams absence requests and schedules.",
         "team": "4 teammates (Developers + SM + QA Testers)",
@@ -200,7 +221,10 @@
       },
       {
         "role": "Front-end developer",
-        "company": "Chapeau de paille",
+        "company": {
+          "label": "Mobelite",
+          "imageUrl": "/images/companies/mobelite.jpg"
+        },
         "period": "Oct 2016 - Mars 2017 · 6 months",
         "description": "Intranet chlorofil portal is a dashboard for Chapeau De Paille community, a platform to collect and gather data about crops harvesting, a link of exchange and collaboration for internal members.",
         "team": "6 teammates",
@@ -225,7 +249,10 @@
       },
       {
         "role": "Web developer",
-        "company": "gravelline",
+        "company": {
+          "label": "Mobelite",
+          "imageUrl": "/images/companies/mobelite.jpg"
+        },
         "period": "Juil 2016 - Oct 2016 · 4 months",
         "description": "La gravelline.com is an e-commerce website for selling products based on bio plants.",
         "team": "3 teammates (Developers + SM + QA)",
@@ -249,7 +276,10 @@
       },
       {
         "role": "Front-end developer",
-        "company": "Eiffage construction",
+        "company": {
+          "label": "Mobelite",
+          "imageUrl": "/images/companies/mobelite.jpg"
+        },
         "period": "Mars 2017 - Sept 2017 · 7 months",
         "description": "Final Safe, a security reporting Multi platform application (mobile, website) for Eiffage construction sites.",
         "team": "12 teammates (Developers + SM + QA Testers)",
@@ -273,7 +303,10 @@
       },
       {
         "role": "Fullstack web developer",
-        "company": "DimaTech",
+        "company": {
+          "label": "DimaTech",
+          "imageUrl": "/images/companies/dimatech.jpg"
+        },
         "period": "Jan 2016 - Juin 2016 · 6 months",
         "description": "A Facebook pages listing and news broadcasting website in the middle east.",
         "team": "2 teammates (Developer + Project Manager)",
@@ -297,7 +330,10 @@
       },
       {
         "role": "Web developer",
-        "company": "Freelance",
+        "company": {
+          "label": "Freelance",
+          "imageUrl": "/images/companies/freelancer_com.jpg"
+        },
         "period": "Jan 2014 - Jan 2016 · 2 years",
         "description": "Development of websites and web applications as a freelancer.",
         "team": "N/A",

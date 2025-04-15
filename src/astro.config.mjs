@@ -5,7 +5,8 @@ export default defineConfig({
     trailingSlash: 'ignore',
     redirects: {
         // Explicitly ignore favicon.ico
-        '/favicon.ico': '/favicon.ico', // Forces Astro to treat it as static
+        '/favicon.ico': '/favicon.ico', // Forces Astro to treat it as static,
+        '/images/': '/images/'
     },
     experimental: {
         middleware: true

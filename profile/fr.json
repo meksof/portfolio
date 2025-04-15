@@ -38,7 +38,10 @@
     "items": [
       {
         "role": "Développeur Frontend en CDD",
-        "company": "Scalian",
+        "company": {
+          "label": "Scalian",
+          "imageUrl": "/images/companies/scalian.jpg"
+        },
         "period": "Fév 2024 - Avril 2024 · 3 mois",
         "description": "Chocolatine est une solution web pour gérer les résolutions de problèmes à travers la programmation par contrainte.",
         "team": "Équipe technique: 4 développeurs.",
@@ -60,7 +63,10 @@
       },
       {
         "role": "Développeur Frontend en interne",
-        "company": "ANTEMETA",
+        "company": {
+          "label": "ANTEMETA",
+          "imageUrl": "/images/companies/antemeta.jpg"
+        },
         "period": "Avr 2020 - Août 2023 · 3 ans 5 mois",
         "description": "Implémenter les interfaces utilisateurs des produits Antemeta.",
         "team": "3 dev full stack + ingénieur devops + manager",
@@ -85,7 +91,10 @@
       },
       {
         "role": "Développeur frontend (consultant)",
-        "company": "IHEDN",
+        "company": {
+          "label": "IHEDN",
+          "imageUrl": "/images/companies/jeunes_ihedn.jpg"
+        },
         "period": "Sept 2019 - Nov 2019 · 3 mois",
         "description": "Application mobile (iOS & ANDROID) destinée aux activités internes pour IHEDN, notification PUSH, Consultation des évènements / agenda, accès aux services depuis l'appli: espace de collaboration, Flux RSS.",
         "team": "2 software engineers",
@@ -108,7 +117,10 @@
       },
       {
         "role": "Développeur frontend (consultant)",
-        "company": "CNFPT",
+        "company": {
+          "label": "CNFPT",
+          "imageUrl": "/images/companies/cnfpt.jpg"
+        },
         "period": "Mars 2019 - Juil 2019 · 5 mois",
         "description": "Portail de services, qui gère les sessions de formation des fonctionnaires de la fonction publique.",
         "team": "9 personnes (Développeurs + SM + Testeurs QA)",
@@ -133,7 +145,10 @@
       },
       {
         "role": "Développeur frontend (consultant)",
-        "company": "Groupe RENAULT",
+        "company": {
+          "label": "Groupe RENAULT",
+          "imageUrl": "/images/companies/renault.jpg"
+        },
         "period": "Juil 2018 - Jan 2019 · 7 mois",
         "description": "La solution SMART CO2 permet de générer une fiche gamme commerciale de véhicules optimisées, en terme de taux d'émission de CO2.",
         "team": "5 personnes (Développeurs + SM + Testeurs QA)",
@@ -158,7 +173,10 @@
       },
       {
         "role": "Développeur frontend",
-        "company": "Elsevier Masson",
+        "company": {
+          "label": "Mobelite",
+          "imageUrl": "/images/companies/mobelite.jpg"
+        },
         "period": "Nov 2017 - Jan 2018 · 3 mois",
         "description": "eBroncho - Une application hybride (Android, iOS) de Listing des Descripteurs de Maladies Respiratoires, servant comme référence dans le domaine de la bronchoscopie.",
         "team": "4 personnes (Développeurs + SM + Testeurs QA)",
@@ -181,7 +199,10 @@
       },
       {
         "role": "Développeur frontend",
-        "company": "expersi",
+        "company": {
+          "label": "Mobelite",
+          "imageUrl": "/images/companies/mobelite.jpg"
+        },
         "period": "Sept 2017 - Nov 2017 · 3 mois",
         "description": "myHR - Une application de gestion des ressources humaines: plannings d'équipes, demandes d'absences.",
         "team": "4 personnes (Développeurs + SM + Testeurs QA)",
@@ -203,9 +224,12 @@
       },
       {
         "role": "Développeur frontend",
-        "company": "Eiffage construction",
+        "company": {
+          "label": "Mobelite",
+          "imageUrl": "/images/companies/mobelite.jpg"
+        },
         "period": "Mars 2017 - Sept 2017 · 7 mois",
-        "description": "Une application de gestion des rapports de sécurité auprès des chantiers de construction de la société Eiffage.",
+        "description": "FinalSafe: une application de gestion des rapports de sécurité auprès des chantiers de construction de la société Eiffage.",
         "team": "12 personnes (Développeurs + SM + Testeurs QA)",
         "responsibilities": [
           "Intégration du design",
@@ -227,7 +251,10 @@
       },
       {
         "role": "Intégrateur web",
-        "company": "Chapeau de paille",
+        "company": {
+          "label": "Mobelite",
+          "imageUrl": "/images/companies/mobelite.jpg"
+        },
         "period": "Oct 2016 - Mars 2017 · 6 mois",
         "description": "Intranet chlorofil - espace de gestion des collectes, un lien d'échange et de collaboration des membres du GIE.",
         "team": "7 personnes (Développeurs + SM + Testeurs QA)",
@@ -252,7 +279,10 @@
       },
       {
         "role": "Intégrateur web",
-        "company": "La gravelline",
+        "company": {
+          "label": "Mobelite",
+          "imageUrl": "/images/companies/mobelite.jpg"
+        },
         "period": "Juil 2016 - Oct 2016 · 4 mois",
         "description": "La gravelline.com - Un site ecommerce pour vente de produits à base de plantes biologiques.",
         "team": "3 personnes (Développeurs + SM + Testeurs QA)",
@@ -276,7 +306,10 @@
       },
       {
         "role": "Développeur fullstack (freelance)",
-        "company": "DimaTech",
+        "company": {
+          "label": "DimaTech",
+          "imageUrl": "/images/companies/dimatech.jpg"
+        },
         "period": "Jan 2016 - Juin 2016 · 6 mois",
         "description": "Un répertoire de pages Facebook en moyen orient",
         "team": "2 personnes (Développeur + Project Manager)",
@@ -300,7 +333,10 @@
       },
       {
         "role": "Développeur web Freelance",
-        "company": "Freelance",
+        "company": {
+          "label": "Freelance",
+          "imageUrl": "/images/companies/freelancer_com.jpg"
+        },
         "period": "Jan 2014 - Jan 2016 · 2 ans",
         "description": "Développement de sites web et applications web en freelance.",
         "team": "N/A",

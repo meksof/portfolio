@@ -15,8 +15,8 @@ const { project, readMoreText, showLessText } = Astro.props;
         class="flex flex-wrap gap-4 items-center w-full whitespace-nowrap max-md:max-w-full"
     >
         <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/3fcffb75b958a59cc2427cd21de3dd00f1b88dc4?placeholderIfAbsent=true&apiKey=d16caa26bca646eaacef0153851189d4"
-            alt={`${project.company} logo`}
+            src={project.company.imageUrl}
+            alt={`${project.company.label} logo`}
             class="object-contain overflow-hidden shrink-0 self-center mx-auto my-0 w-16 aspect-square"
         />
         <div
@@ -25,7 +25,7 @@ const { project, readMoreText, showLessText } = Astro.props;
             <h3
                 class="text-lg font-bold leading-none text-gray-900 text-ellipsis max-md:max-w-full"
             >
-                {project.role} {Astro.params.lang === 'fr' ? 'chez' : 'at'} {project.company}
+                {project.role} {Astro.params.lang === 'fr' ? 'chez' : 'at'} {project.company.label}
             </h3>
             <p class="text-base text-gray-600 text-ellipsis max-md:max-w-full">
                 {project.period}
