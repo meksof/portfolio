@@ -1263,6 +1263,13 @@ body {
   }
 }
 
+@media (max-width: 395px) {
+  .max-\[395px\]\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 @media (max-width: 359px) {
   .max-\[359px\]\:hidden {
     display: none;
