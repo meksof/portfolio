@@ -23,7 +23,8 @@ const { project, readMoreText, showLessText } = Astro.props;
             class="flex flex-col flex-1 shrink justify-center self-stretch my-auto basis-0 min-w-60 max-md:max-w-full"
         >
             <h3
-                class="text-lg font-bold leading-none text-gray-900 text-ellipsis max-md:max-w-full"
+                class="text-lg font-bold leading-none text-gray-900 truncate max-w-full"
+                title={`${project.role} ${Astro.params.lang === 'fr' ? 'chez' : 'at'} ${project.company.label}`}
             >
                 {project.role} {Astro.params.lang === 'fr' ? 'chez' : 'at'} {project.company.label}
             </h3>

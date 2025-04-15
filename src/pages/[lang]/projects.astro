@@ -19,13 +19,8 @@ const profile = await getContent(lang);
 
         <!-- Main content -->
         <main class="flex flex-1 pb-24">
-            <div
-                class="w-[120px] max-md:w-[60px] max-sm:hidden"
-                aria-hidden="true"
-            >
-            </div>
             <section
-                class="flex flex-col flex-1 gap-4 px-0 py-9 max-w-[1091px] max-sm:p-5"
+                class="flex flex-col flex-1 gap-4 px-0 py-9 max-w-[1091px] max-sm:p-5 max-md:px-16 px-32"
             >
                 {profile.projects.items.map((project) => (
                     <ProjectItem project={project} readMoreText={profile.projects.readMore} showLessText={profile.projects.showLess} />

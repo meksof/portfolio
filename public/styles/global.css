@@ -712,6 +712,10 @@ video {
   width: 100%;
 }
 
+.w-\[276px\] {
+  width: 276px;
+}
+
 .min-w-60 {
   min-width: 15rem;
 }
@@ -812,6 +816,12 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .text-ellipsis {
