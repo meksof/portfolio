@@ -50,6 +50,7 @@ export interface UserCard {
 
   export interface Certifications {
     title: string;
+    showAll: string;
     items: Certification[];
   }
   

@@ -332,6 +332,7 @@
   },
   "certifications": {
     "title": "Certifications",
+    "showAll": "Afficher toutes les %i certifications",
     "items": [
       {
         "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09",
