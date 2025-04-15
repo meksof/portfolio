@@ -15,7 +15,7 @@ const {certifications} = Astro.props
     <h2 class="font-bold text-3xl leading-tight text-gray-900">{certifications.title}</h2>
 
     <div class="flex flex-col gap-4 mt-6 w-full max-md:max-w-full">
-        {certifications.items.map((certification, index) => (
+        {certifications.items.slice(0, 3).map((certification, index) => (
             <CertificationItem certification={certification} index={index} />
         ))}
     </div>
@@ -30,7 +30,7 @@ const {certifications} = Astro.props
             hover:bg-[#e8e7ff]"
             href={`/${Astro.params.lang}/certifications`}
         >
-            <span class="self-stretch my-auto">Show all 8 certifications</span>
+            <span class="self-stretch my-auto">{certifications.showAll.replace('%i', certifications.items.length.toString())}</span>
             <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/55f423bc1427a1f86bf9a5fc2f991546d08a9f5c?placeholderIfAbsent=true&apiKey=d16caa26bca646eaacef0153851189d4"
                 alt="Arrow down"

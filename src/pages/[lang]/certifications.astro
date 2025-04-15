@@ -29,8 +29,8 @@ const profile = await getContent(lang);
                 {profile.certifications.items.map((certification) => (
                     <article class="flex items-center w-full">
                         <img
-                            src={certification.imageSrc}
-                            alt={`${certification.title} icon`}
+                            src={certification.issuer.imageUrl}
+                            alt={`${certification.issuer.label} logo`}
                             class="shrink-0 w-16 h-16"
                         />
                         <div
@@ -44,7 +44,7 @@ const profile = await getContent(lang);
                             <p
                                 class="text-base leading-6 text-gray-900 max-sm:text-sm max-sm:leading-5"
                             >
-                                {certification.issuer}
+                                {certification.issuer.label}
                             </p>
                             <p
                                 class="text-sm leading-6 text-gray-600 max-sm:text-xs max-sm:leading-5"
