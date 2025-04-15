@@ -52,7 +52,7 @@ pnpm dev
     ex: mywebsite.com/ -> mywebsite.com/en
 - [x] Add projects page according to the mockup.
 - [ ] Add sticky header to home page according to the mockup.
-- [ ] Make sure project/certification sections dont overflow on mobile.
+- [x] Make sure project/certification sections dont overflow on mobile.
     - Truncate text for titles, and add three dots
     - Make sure description text wraps
 - [x] Add "read full description/ show less" button interaction.
