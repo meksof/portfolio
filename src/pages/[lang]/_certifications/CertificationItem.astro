@@ -6,7 +6,7 @@ interface Props {
     index: number;
 }
 
-const { certification, index } = Astro.props;
+const { certification } = Astro.props;
 ---
 
 <!-- Certification Item -->
@@ -14,8 +14,8 @@ const { certification, index } = Astro.props;
     class=`flex flex-wrap justify-center items-center w-full max-md:max-w-full`
 >
     <img
-        src={certification.imageSrc}
-        alt={certification.title}
+        src={certification.issuer.imageUrl}
+        alt={certification.issuer.label}
         class="object-contain overflow-hidden shrink-0 self-stretch my-auto w-16 aspect-square"
     />
     <div
@@ -24,7 +24,7 @@ const { certification, index } = Astro.props;
         <h3
             class="text-lg font-bold text-black whitespace-nowrap text-ellipsis max-md:max-w-full"
         >{certification.title}</h3>
-        <p class="text-base leading-6 text-gray-900 max-sm:text-sm max-sm:leading-5">{certification.issuer}</p>
+        <p class="text-base leading-6 text-gray-900 max-sm:text-sm max-sm:leading-5">{certification.issuer.label}</p>
         <p class="text-sm leading-6 text-gray-600 max-sm:text-xs max-sm:leading-5">{certification.issuedDate}</p>
     </div>
 </div>

@@ -55,7 +55,7 @@ pnpm dev
 - [x] Add "read full description/ show less" button interaction.
 - [ ] Update image sources for:
     - [x] projects
-    - [ ] certifications
+    - [x] certifications
 - [ ] Enhance website performance:
     - [ ] Use [image component](https://docs.astro.build/en/guides/images/)
 - [ ] Add social media metadata (highlighted image, description)

@@ -3,7 +3,10 @@
   "description": "Portfolio of Sofiane MEKSI, a Senior Frontend Developer with 9 years of experience in web development.",
   "userCard": {
     "title": "Senior Frontend Developer",
-    "alt": "a man with glasses, wearing a black t-shirt, smiling at the camera",
+    "avatar": {
+      "alt": "a man with glasses, wearing a black t-shirt, smiling at the camera",
+      "imageUrl": "/images/avatar.png"
+    },
     "name": "Sofiane MEKSI"
   },
   "bio": {
@@ -368,40 +371,108 @@
     "showAll": "Show all %i certifications",
     "items": [
       {
-        "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09",
+        "title": "EF SET English Certificate 63/100 (C1 Advanced)",
+        "issuer": {
+          "label": "EF SET",
+          "imageUrl": "/images/certifications/efset.jpg"
+        },
+        "issuedDate": "Issued Apr 2025"
+      },
+      {
+        "title": "UI Components II",
+        "issuer": {
+          "label": "Uxcel",
+          "imageUrl": "/images/certifications/uxcel.jpg"
+        },
+        "issuedDate": "Issued Dec 2024"
+      },
+      {
         "title": "UX Design Patterns with Checklist Design",
-        "issuer": "Uxcel",
-        "issuedDate": "Issued Dec 2024"
+        "issuer": {
+          "label": "Uxcel",
+          "imageUrl": "/images/certifications/uxcel.jpg"
+        },
+        "issuedDate": "Issued Nov 2024"
       },
       {
-        "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09",
-        "title": "UX Design Patterns with Checklist Design",
-        "issuer": "Uxcel",
-        "issuedDate": "Issued Dec 2024"
+        "title": "Effective Angular Testing",
+        "issuer": {
+          "label": "HiRez.io",
+          "imageUrl": "/images/certifications/hirez_io.jpg"
+        },
+        "issuedDate": "Issued Sep 2024"
       },
       {
-        "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09",
-        "title": "UX Design Patterns with Checklist Design",
-        "issuer": "Uxcel",
-        "issuedDate": "Issued Dec 2024"
+        "title": "Common Design Patterns",
+        "issuer": {
+          "label": "Uxcel",
+          "imageUrl": "/images/certifications/uxcel.jpg"
+        },
+        "issuedDate": "Issued Nov 2023"
       },
       {
-        "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09",
-        "title": "Blah blah blah",
-        "issuer": "Uxcel",
-        "issuedDate": "Issued Dec 2024"
+        "title": "Design Composition",
+        "issuer": {
+          "label": "Uxcel",
+          "imageUrl": "/images/certifications/uxcel.jpg"
+        },
+        "issuedDate": "Issued Nov 2023"
       },
       {
-        "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09",
-        "title": "Mastering simplicity",
-        "issuer": "HiRez.io",
-        "issuedDate": "Issued Dec 2024"
+        "title": "UI Components I",
+        "issuer": {
+          "label": "Uxcel",
+          "imageUrl": "/images/certifications/uxcel.jpg"
+        },
+        "issuedDate": "Issued Oct 2023"
       },
       {
-        "imageSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/9f45e07c72a460c9bdfb1898cef625793d181a09",
-        "title": "Advanced Blah blah",
-        "issuer": "HiRez.io",
-        "issuedDate": "Issued Dec 2024"
+        "title": "Color Psychology",
+        "issuer": {
+          "label": "Uxcel",
+          "imageUrl": "/images/certifications/uxcel.jpg"
+        },
+        "issuedDate": "Issued Dec 2022"
+      },
+      {
+        "title": "UX/UI Design Foundations",
+        "issuer": {
+          "label": "Uxcel",
+          "imageUrl": "/images/certifications/uxcel.jpg"
+        },
+        "issuedDate": "Issued Feb 2022"
+      },
+      {
+        "title": "Angular 2 Testing and Debugging",
+        "issuer": {
+          "label": "Linkedin",
+          "imageUrl": "/images/certifications/linkedin.jpg"
+        },
+        "issuedDate": "Issued Nov 2017"
+      },
+      {
+        "title": "Building a Progressive Web App",
+        "issuer": {
+          "label": "Linkedin",
+          "imageUrl": "/images/certifications/linkedin.jpg"
+        },
+        "issuedDate": "Issued Nov 2017"
+      },
+      {
+        "title": "JavaScript: Templating",
+        "issuer": {
+          "label": "Linkedin",
+          "imageUrl": "/images/certifications/linkedin.jpg"
+        },
+        "issuedDate": "Issued Oct 2017"
+      },
+      {
+        "title": "CCNA",
+        "issuer": {
+          "label": "Cisco",
+          "imageUrl": "/images/certifications/cisco.jpg"
+        },
+        "issuedDate": "Issued Jan 2011"
       }
     ]
   }
