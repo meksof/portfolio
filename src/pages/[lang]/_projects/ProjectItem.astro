@@ -36,9 +36,9 @@ const { project, readMoreText, showLessText } = Astro.props;
     <div
         class="flex flex-wrap gap-4 items-start mt-2 w-full max-md:max-w-full project-description"
     >
-        <div class="flex shrink-0 self-stretch my-auto w-16 h-10"></div>
+        <div class="flex shrink-0 self-stretch my-auto w-16 h-10 max-[359px]:hidden"></div>
         <div
-            class="flex-1 shrink self-stretch basis-0 min-w-60 max-md:max-w-full"
+            class="flex-1 shrink self-stretch basis-0 max-md:max-w-full"
         >
             <p class="text-base text-gray-700 max-md:max-w-full line-clamp-1 expanded:line-clamp-none">
                 {project.description}

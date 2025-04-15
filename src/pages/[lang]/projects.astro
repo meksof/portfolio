@@ -18,9 +18,9 @@ const profile = await getContent(lang);
         <Header title={profile.projects.title} />
 
         <!-- Main content -->
-        <main class="flex flex-1 pb-24">
+        <main class="w-full flex flex-1 pb-24">
             <section
-                class="flex flex-col flex-1 gap-4 px-0 py-9 max-w-[1091px] max-sm:p-5 max-md:px-16 px-32"
+                class="w-full flex flex-col flex-1 gap-4 px-0 py-9 max-w-[1091px] max-sm:p-5 max-md:px-16 px-32"
             >
                 {profile.projects.items.map((project) => (
                     <ProjectItem project={project} readMoreText={profile.projects.readMore} showLessText={profile.projects.showLess} />

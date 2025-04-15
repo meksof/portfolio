@@ -1259,6 +1259,12 @@ body {
   }
 }
 
+@media (max-width: 359px) {
+  .max-\[359px\]\:hidden {
+    display: none;
+  }
+}
+
 .\[\&_\.icontainer\]\:hover\:bg-\[\#f3f4f6\]:hover .icontainer {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
