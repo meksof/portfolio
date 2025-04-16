@@ -27,12 +27,14 @@ const { projects } = Astro.props;
         class="flex justify-center items-center mt-6 w-full text-base font-bold text-indigo-600 max-md:max-w-full"
     >
         <a
-            class="flex flex-wrap flex-1 shrink gap-2 justify-center items-center self-stretch py-4 my-auto w-full basis-0 min-w-60 max-md:max-w-full hover:bg-[#e8e7ff]"
+            class="flex flex-wrap flex-1 shrink gap-2 
+            justify-center items-center self-stretch py-4 my-auto w-full basis-0 min-w-60 max-md:max-w-full 
+            hover:bg-[#e8e7ff] transition-colors"
             href={`/${Astro.params.lang}/projects`}
         >
             <span class="self-stretch my-auto">{projects.showAll.replace('%i', projects.items.length.toString())}</span>
             <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/55f423bc1427a1f86bf9a5fc2f991546d08a9f5c?placeholderIfAbsent=true&apiKey=d16caa26bca646eaacef0153851189d4"
+                src="/images/arrowsoutlinenew-tab.svg"
                 alt="Arrow down"
                 class="object-contain overflow-hidden shrink-0 self-stretch my-auto aspect-square w-[18px]"
             />

@@ -17,14 +17,9 @@ const profile = await getContent(lang);
         <Header title={profile.certifications.title} />
 
         <!-- Main content -->
-        <main class="flex flex-1 pb-24">
-            <div
-                class="w-[120px] max-md:w-[60px] max-sm:hidden"
-                aria-hidden="true"
-            >
-            </div>
+        <main class="w-full flex flex-1 pb-24">
             <section
-                class="flex flex-col flex-1 gap-4 px-0 py-9 max-w-[1091px] max-sm:p-5"
+                class="w-full flex flex-col flex-1 gap-4 px-0 py-9 max-w-[1091px] max-sm:p-5 max-md:px-16 px-32"
             >
                 {profile.certifications.items.map((certification) => (
                     <article class="flex items-center w-full">
@@ -34,10 +29,11 @@ const profile = await getContent(lang);
                             class="shrink-0 w-16 h-16"
                         />
                         <div
-                            class="flex flex-col flex-1 px-6 py-0 max-sm:px-3 max-sm:py-0"
+                            class="flex flex-col flex-1 min-w-60 px-6 py-0 max-sm:px-3 max-sm:py-0"
                         >
                             <h2
-                                class="overflow-hidden text-lg font-bold text-black whitespace-nowrap text-ellipsis max-sm:text-base max-sm:leading-6"
+                                class="text-lg font-bold text-black truncate max-w-full max-sm:text-base max-sm:leading-6"
+                                title={certification.title}
                             >
                                 {certification.title}
                             </h2>

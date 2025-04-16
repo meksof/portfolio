@@ -22,7 +22,8 @@ const { certification } = Astro.props;
         class="flex flex-col flex-1 shrink justify-center self-stretch px-6 my-auto basis-0 min-w-60 max-md:px-5 max-md:max-w-full"
     >
         <h3
-            class="text-lg font-bold text-black whitespace-nowrap text-ellipsis max-md:max-w-full"
+            class="text-lg font-bold text-black truncate max-w-full"
+            title={certification.title}
         >{certification.title}</h3>
         <p class="text-base leading-6 text-gray-900 max-sm:text-sm max-sm:leading-5">{certification.issuer.label}</p>
         <p class="text-sm leading-6 text-gray-600 max-sm:text-xs max-sm:leading-5">{certification.issuedDate}</p>
