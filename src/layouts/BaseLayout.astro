@@ -37,7 +37,8 @@ const APP_VERSION = pkg.version || '0.0.0';
         <link rel="stylesheet" href="/styles/global.css" />
         <script async src={getEnvVar('ACKEE_TRACKER_URL')}
             data-ackee-server={getEnvVar('ACKEE_SERVER_URL')}
-            data-ackee-domain-id={getEnvVar('ACKEE_DOMAIN_ID')}></script>
+            data-ackee-domain-id={getEnvVar('ACKEE_DOMAIN_ID')}
+            data-ackee-opts={getEnvVar('ACKEE_OPTS')}></script>
     </head>
     <body class="bg-gray-100">
         <slot />
