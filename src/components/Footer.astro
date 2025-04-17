@@ -1,11 +1,12 @@
 ---
+import { getEnvVar } from "@utils/env";
 import type { CTA } from "src/entities/profile"
 
 interface Props {
     cta: CTA
 }
 const { cta } = Astro.props
-const calendlyUrl = import.meta.env.NEXT_PUBLIC_CALENDLY_URL;
+const calendlyUrl = getEnvVar('ASTRO_PUBLIC_CALENDLY_URL');
 ---
 <!-- Footer Section -->
 <footer

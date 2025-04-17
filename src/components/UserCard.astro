@@ -1,4 +1,5 @@
 ---
+import { getEnvVar } from '@utils/env';
 import type { CTA, UserCard } from 'src/entities/profile';
 
 interface Props {
@@ -9,7 +10,7 @@ const {
     userCard,
     cta
 } = Astro.props;
-const calendlyUrl = import.meta.env.NEXT_PUBLIC_CALENDLY_URL;
+const calendlyUrl = getEnvVar('ASTRO_PUBLIC_CALENDLY_URL');
 ---
 <!-- User Profile Card -->
 <aside

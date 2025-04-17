@@ -2,7 +2,7 @@
 import Header from "@components/Header.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { availableLanguages } from '@utils/language.ts';
-import { getContent } from '@utils/getContent.ts';
+import { getContent } from '@utils/content';
 
 export async function getStaticPaths() {
   return availableLanguages.map(lang => ({ params: { lang } }));
