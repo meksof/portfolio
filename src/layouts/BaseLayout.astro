@@ -46,5 +46,17 @@ const APP_VERSION = pkg.version || '0.0.0';
         <div class="text-center text-gray-300 text-sm max-sm:bg-white ">
             v{ APP_VERSION }
         </div>
+        <script is:inline id="ackee-script">
+            document.querySelectorAll('[data-ackee-event]').forEach(trackedElement => {
+              trackedElement.addEventListener('click', () => {
+                if (window.ackeeTracker) {
+                    ackeeTracker.create().action(
+                    trackedElement.dataset.ackeeEvent,
+                    { key: trackedElement.dataset.ackeeKey || 'unknown', value: 1 }
+                  );
+                }
+              });
+            });
+          </script>
     </body>
 </html>

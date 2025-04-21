@@ -39,6 +39,11 @@ yarn dev
 pnpm dev
 ```
 - Add calendly url as `ASTRO_PUBLIC_CALENDLY_URL` in your .env file
+- Add Ackee tracking keys as folowing:
+    - ACKEE_SERVER=https://your_domain.example
+    - ACKEE_TRACKER_URL=https://your_domain.example/tracker.js
+    - ACKEE_DOMAIN_ID=xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    - ACKEE_OPTS={ "ignoreLocalhost": false, "detailed": true }
 
 ## What to do next ?
 
