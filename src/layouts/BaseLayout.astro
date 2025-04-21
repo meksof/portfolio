@@ -4,7 +4,7 @@ import {getEnvVar} from '@utils/env';
 
 const { title, lang } = Astro.props;
 const APP_VERSION = pkg.version || '0.0.0';
-
+const serverUrl = getEnvVar('ACKEE_TRACKER_URL')
 ---
 
 <html lang={lang}>
@@ -35,7 +35,7 @@ const APP_VERSION = pkg.version || '0.0.0';
             crossorigin
         />
         <link rel="stylesheet" href="/styles/global.css" />
-        <script async src={getEnvVar('ACKEE_TRACKER_URL')}
+        <script async src={serverUrl}
             data-ackee-server={getEnvVar('ACKEE_SERVER_URL')}
             data-ackee-domain-id={getEnvVar('ACKEE_DOMAIN_ID')}
             data-ackee-opts={getEnvVar('ACKEE_OPTS')}></script>
@@ -46,11 +46,11 @@ const APP_VERSION = pkg.version || '0.0.0';
         <div class="text-center text-gray-300 text-sm max-sm:bg-white ">
             v{ APP_VERSION }
         </div>
-        <script is:inline id="ackee-script">
+        <script is:inline id="ackee-script" define:vars={{serverUrl}}>
             document.querySelectorAll('[data-ackee-event]').forEach(trackedElement => {
               trackedElement.addEventListener('click', () => {
                 if (window.ackeeTracker) {
-                    ackeeTracker.create().action(
+                    ackeeTracker.create(serverUrl).action(
                     trackedElement.dataset.ackeeEvent,
                     { key: trackedElement.dataset.ackeeKey || 'unknown', value: 1 }
                   );
