@@ -38,14 +38,14 @@ yarn dev
 # or
 pnpm dev
 ```
-- Add calendly url as `NEXT_PUBLIC_CALENDLY_URL` in your .env file
+- Add calendly url as `ASTRO_PUBLIC_CALENDLY_URL` in your .env file
 
 ## What to do next ?
 
-- [ ] track traffic metrics, mainly:
-    - cta button clicked.
-    - navigate to page interaction.
-    - Manage utm source (add extra params when sharing your portfolio url, ex: me.dev/?urm_source=linkedin)
+- [x] track traffic metrics, mainly:
+    - [x] cta button clicked.
+    - [x] navigate to page interaction.
+    - [x] Manage utm source (add extra params when sharing your portfolio url, ex: me.dev/?urm_source=linkedin)
 - [x] Add multilangual capabilites.
     - [x] language switcher
     - [x] add logic to redirect user to the corresponding lang web page, based on the browser language setting.

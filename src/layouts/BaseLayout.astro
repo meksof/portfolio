@@ -1,7 +1,11 @@
 ---
 const { title, lang } = Astro.props;
 import pkg from '../../package.json';
+
+import { getEnvVar } from '@utils/env';
+
 const APP_VERSION = pkg.version || '0.0.0';
+const smtServer = getEnvVar('SMT_SERVER')
 ---
 
 <html lang={lang}>
@@ -39,5 +43,7 @@ const APP_VERSION = pkg.version || '0.0.0';
         <div class="text-center text-gray-300 text-sm max-sm:bg-white ">
             v{ APP_VERSION }
         </div>
+        <input type="hidden" name="smt-server" value={smtServer}>
+        <script src="../scripts/tracker.ts"></script>
     </body>
 </html>
