@@ -1,12 +1,5 @@
-type ResponseBody = {
-    id: string;
-}
-type RequestBody = {
-    referrer: string;
-    utm_source: string | null;
-    page: string;
-    duration: number;
-}
+import type { RequestBody, ResponseBody } from "./models";
+
 // Get SMT server URL from hidden input
 const smtServerInput = document.querySelector('input[name="smt-server"]') as HTMLInputElement;
 const smtServer = smtServerInput ? smtServerInput.value : 'http://localhost:3000';

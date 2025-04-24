@@ -45,7 +45,7 @@ pnpm dev
 - [ ] track traffic metrics, mainly:
     - [ ] cta button clicked.
     - [x] navigate to page interaction.
-    - [ ] Manage utm source (add extra params when sharing your portfolio url, ex: me.dev/?urm_source=linkedin)
+    - [x] Manage utm source (add extra params when sharing your portfolio url, ex: me.dev/?urm_source=linkedin)
 - [x] Add multilangual capabilites.
     - [x] language switcher
     - [x] add logic to redirect user to the corresponding lang web page, based on the browser language setting.
