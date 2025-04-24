@@ -8,7 +8,7 @@ export function trackVisit(smtServer: string) {
     // Get UTM source from URL
     const urlParams = new URLSearchParams(window.location.search);
     const utmSource = urlParams.get('utm_source') || null;
-    const page = window.location.pathname;
+    const fullUrl = window.location.href; 
 
     // Record the start time
     const startTime = Date.now();
@@ -18,7 +18,7 @@ export function trackVisit(smtServer: string) {
     const requestBody: VisitViewModel = {
         referrer,
         utm_source: utmSource,
-        page,
+        page: fullUrl,
         duration: 0 // Initial duration is 0
     };
 
