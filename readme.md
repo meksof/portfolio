@@ -42,8 +42,8 @@ pnpm dev
 
 ## What to do next ?
 
-- [ ] track traffic metrics, mainly:
-    - [ ] cta button clicked.
+- [x] track traffic metrics, mainly:
+    - [x] cta button clicked.
     - [x] navigate to page interaction.
     - [x] Manage utm source (add extra params when sharing your portfolio url, ex: me.dev/?urm_source=linkedin)
 - [x] Add multilangual capabilites.

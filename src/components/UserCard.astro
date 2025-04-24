@@ -35,6 +35,8 @@ const calendlyUrl = getEnvVar('ASTRO_PUBLIC_CALENDLY_URL');
         class="gap-2.5 self-stretch px-3 py-2.5 mt-10 w-[236px] mx-auto text-base font-bold leading-relaxed text-white bg-[#6C3CE9] hover:bg-[#5B32C7] rounded-md min-h-11 transition-colors"
         href={calendlyUrl}
         target="_blank"
+        data-track="click"
+        data-track-value="CTA_user_card"
     >
         {cta.button}
     </a>

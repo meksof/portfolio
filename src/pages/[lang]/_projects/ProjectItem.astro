@@ -60,6 +60,8 @@ const { project, readMoreText, showLessText } = Astro.props;
             <button
                 class="mt-2 text-sm text-indigo-600 hover:text-indigo-700 transition-colors read-more"
                 aria-expanded="false"
+                data-track="click"
+                data-track-value=`show-more-project_${project.title ? project.title : project.company.label}`
             >
                 <span class="expanded:hidden">{readMoreText}</span>
                 <span class="hidden expanded:inline">{showLessText}</span>

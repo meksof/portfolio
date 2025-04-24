@@ -39,6 +39,7 @@
     "showAll": "Show all %i projects",
     "items": [
       {
+        "title": "Chocolatine",
         "role": "Frontend Developer (Fixed-term contract)",
         "company": {
           "label": "Scalian",
@@ -64,6 +65,7 @@
         ]
       },
       {
+        "title": "Aurora",
         "role": "Front-end developer",
         "company": {
           "label": "ANTEMETA",
@@ -91,6 +93,7 @@
         ]
       },
       {
+        "title": "Ihedn Mobile",
         "role": "Web developer (as consultant)",
         "company": {
           "label": "IHEDN",
@@ -144,6 +147,7 @@
         ]
       },
       {
+        "title": "Smart CO2",
         "role": "Front-end developer (as consultant)",
         "company": {
           "label": "Groupe RENAULT",
@@ -172,6 +176,7 @@
         ]
       },
       {
+        "title": "eBroncho",
         "role": "Front-end developer",
         "company": {
           "label": "Mobelite",
@@ -198,6 +203,7 @@
         ]
       },
       {
+        "title": "myHR",
         "role": "Front-end developer",
         "company": {
           "label": "Mobelite",
@@ -222,6 +228,35 @@
         ]
       },
       {
+        "title": "FinalSafe",
+        "role": "Frontend Developer",
+        "company": {
+          "label": "Mobelite",
+          "imageUrl": "/images/companies/mobelite.jpg"
+        },
+        "period": "March 2017 - September 2017 · 7 months",
+        "description": "FinalSafe: a safety reporting application (ios, android, web) for Eiffage construction sites.",
+        "team": "12 teammates (Developers + SM + QA Testers)",
+        "responsibilities": [
+          "Design integration",
+          "Creation of new UI components",
+          "Development of the statistics and analysis graphs section",
+          "Automation of script and style compilation tasks"
+        ],
+        "technologies": [
+          "Twig",
+          "Symphony3",
+          "Jquery",
+          "Bootstrap",
+          "CSS3",
+          "D3.js",
+          "Gulp",
+          "Git",
+          "SCSS"
+        ]
+      },
+      {
+        "title": "Chlorofil",
         "role": "Front-end developer",
         "company": {
           "label": "Mobelite",
@@ -250,6 +285,7 @@
         ]
       },
       {
+        "title": "Gravelline",
         "role": "Web developer",
         "company": {
           "label": "Mobelite",
@@ -274,33 +310,6 @@
           "payment gateway",
           "Git",
           "Scrum Methodology"
-        ]
-      },
-      {
-        "role": "Front-end developer",
-        "company": {
-          "label": "Mobelite",
-          "imageUrl": "/images/companies/mobelite.jpg"
-        },
-        "period": "Mars 2017 - Sept 2017 · 7 months",
-        "description": "Final Safe, a security reporting Multi platform application (mobile, website) for Eiffage construction sites.",
-        "team": "12 teammates (Developers + SM + QA Testers)",
-        "responsibilities": [
-          "Mockups integration",
-          "Development of new UI components",
-          "Stats and graph UI development",
-          "Automating scripts and style compilation tasks using gulp"
-        ],
-        "technologies": [
-          "Twig",
-          "Symphony3",
-          "Jquery",
-          "Bootstrap",
-          "CSS3",
-          "D3.js",
-          "gulp",
-          "git",
-          "Sass"
         ]
       },
       {

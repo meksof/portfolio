@@ -39,6 +39,7 @@
     "showAll": "Afficher tous les %i projets",
     "items": [
       {
+        "title": "Chocolatine",
         "role": "Développeur Frontend en CDD",
         "company": {
           "label": "Scalian",
@@ -64,6 +65,7 @@
         ]
       },
       {
+        "title": "Aurora",
         "role": "Développeur Frontend en interne",
         "company": {
           "label": "ANTEMETA",
@@ -92,6 +94,7 @@
         ]
       },
       {
+        "title": "Ihedn Mobile",
         "role": "Développeur frontend (consultant)",
         "company": {
           "label": "IHEDN",
@@ -146,6 +149,7 @@
         ]
       },
       {
+        "title": "Smart CO2",
         "role": "Développeur frontend (consultant)",
         "company": {
           "label": "Groupe RENAULT",
@@ -174,6 +178,7 @@
         ]
       },
       {
+        "title": "eBroncho",
         "role": "Développeur frontend",
         "company": {
           "label": "Mobelite",
@@ -200,6 +205,7 @@
         ]
       },
       {
+        "title": "myHR",
         "role": "Développeur frontend",
         "company": {
           "label": "Mobelite",
@@ -225,6 +231,7 @@
         ]
       },
       {
+        "title": "FinalSafe",
         "role": "Développeur frontend",
         "company": {
           "label": "Mobelite",
@@ -252,6 +259,7 @@
         ]
       },
       {
+        "title": "Chlorofil",
         "role": "Intégrateur web",
         "company": {
           "label": "Mobelite",
@@ -280,6 +288,7 @@
         ]
       },
       {
+        "title": "Gravelline",
         "role": "Intégrateur web",
         "company": {
           "label": "Mobelite",

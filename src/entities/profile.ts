@@ -23,6 +23,7 @@ export interface Company {
 }
 
 export interface Project {
+  title?: string;
   role: string;
   company: Company;
   period: string;
