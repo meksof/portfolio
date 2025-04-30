@@ -51,7 +51,7 @@ pnpm dev
     - [x] add logic to redirect user to the corresponding lang web page, based on the browser language setting.
     ex: mywebsite.com/ -> mywebsite.com/en
 - [x] Add projects page according to the mockup.
-- [ ] Add sticky header to home page according to the mockup.
+- [x] Add sticky header to home page according to the mockup.
 - [x] Make sure project/certification sections dont overflow on mobile.
     - Truncate text for titles, and add three dots
     - Make sure description text wraps

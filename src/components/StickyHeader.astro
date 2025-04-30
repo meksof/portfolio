@@ -1,0 +1,59 @@
+---
+import { getEnvVar } from '@utils/env';
+import type { CTA } from 'src/entities/profile';
+
+interface Props {
+    cta: CTA;
+}
+
+const { cta } = Astro.props;
+const calendlyUrl = getEnvVar('ASTRO_PUBLIC_CALENDLY_URL');
+---
+
+<header
+    id="sticky-header"
+    class="flex justify-center items-center fixed top-0 left-0 w-full px-32 py-0 bg-white shadow-md h-[70px] sm:hidden max-md:px-16 max-md:py-0 max-sm:px-5 max-sm:py-0 transform -translate-y-full transition-transform duration-300 z-50"
+>
+    <a
+        class="gap-2.5 px-3 py-2.5 w-[236px] mx-auto text-base font-bold leading-relaxed text-center text-white bg-[#6C3CE9] hover:bg-[#5B32C7] rounded-md min-h-11 transition-colors"
+        href={calendlyUrl}
+        target="_blank"
+        data-track="click"
+        data-track-value="CTA_sticky_header"
+    >
+        {cta.button}
+    </a>
+</header>
+
+<script>
+    // Script to control sticky header visibility based on scroll direction
+    document.addEventListener('DOMContentLoaded', () => {
+        const TOP_PAGE_OFFSET = 500;
+        const header = document.getElementById('sticky-header');
+        let lastScrollTop = 0;
+
+        if (!header) return;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Show header when scrolling up
+            if (scrollTop < lastScrollTop && scrollTop > TOP_PAGE_OFFSET) {
+                header?.classList.remove('-translate-y-full');
+                header?.classList.add('translate-y-0');
+            } 
+            // Hide header when scrolling down
+            else if (scrollTop > lastScrollTop && scrollTop > TOP_PAGE_OFFSET) {
+                header?.classList.remove('translate-y-0');
+                header?.classList.add('-translate-y-full');
+            }
+            // Hide when at top of page
+            else if (scrollTop <= TOP_PAGE_OFFSET) {
+                header?.classList.remove('translate-y-0');
+                header?.classList.add('-translate-y-full');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    });
+</script> 
