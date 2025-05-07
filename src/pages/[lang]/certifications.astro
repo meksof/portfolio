@@ -3,6 +3,7 @@ import Header from "@components/Header.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { availableLanguages } from '@utils/language.ts';
 import { getContent } from '@utils/getContent.ts';
+import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
   return availableLanguages.map(lang => ({ params: { lang } }));
@@ -23,9 +24,13 @@ const profile = await getContent(lang);
             >
                 {profile.certifications.items.map((certification) => (
                     <article class="flex items-center w-full">
-                        <img
+                        <Image
                             src={certification.issuer.imageUrl}
                             alt={`${certification.issuer.label} logo`}
+                            width={64}
+                            height={64}
+                            format="webp"
+                            quality={80}
                             class="shrink-0 w-16 h-16"
                         />
                         <div
