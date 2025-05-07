@@ -1,4 +1,5 @@
 import type { VisitViewModel, Visit } from "./models";
+import { setCookie } from "./utils";
 
 // Function to track a visit
 export function trackVisit(smtServer: string) {
@@ -32,8 +33,10 @@ export function trackVisit(smtServer: string) {
     })
         .then(response => response.json())
         .then((data: Visit) => {
-            // Store the session ID from the initial response
             sessionId = data.id;
+            
+            // Store the sessionId in a cookie for later use in tracking events
+            setCookie('sessionId', sessionId);
         })
         .catch(err => console.error('Error tracking initial visit:', err));
 

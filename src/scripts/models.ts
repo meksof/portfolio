@@ -13,6 +13,7 @@ export type Event = {
 }
 
 export type EventViewModel = {
+    visitId: string;
     type: string;
     value: string;
 }

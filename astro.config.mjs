@@ -9,17 +9,5 @@ export default defineConfig({
         // Explicitly ignore favicon.ico
         '/favicon.ico': '/favicon.ico', // Forces Astro to treat it as static,
         '/images/': '/images/'
-    },
-    image: {
-        // Configure image optimization options
-        service: {
-            entrypoint: 'astro/assets/services/sharp'
-        },
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: '*'
-            }
-        ]
     }
 });
