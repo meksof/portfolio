@@ -24,7 +24,7 @@ const profile = await getContent(lang);
       <LanguageSwitcher lang={lang} />
 
       <div class="flex flex-wrap gap-4 items-start w-full max-md:max-w-full">
-        <UserCard userCard={profile.userCard} cta={profile.cta} />
+        <UserCard userCard={profile.userCard} cta={profile.cta} socialLinks={profile.socialLinks} />
 
         <!-- Main Content -->
         <section class="flex-1 shrink basis-8 min-w-60 max-md:max-w-full">
@@ -36,7 +36,7 @@ const profile = await getContent(lang);
             certifications={profile.certifications} 
           />
 
-          <Footer cta={profile.cta} />
+          <Footer socialLinks={profile.socialLinks} cta={profile.cta} />
         </section>
       </div>
     </main>

@@ -62,6 +62,7 @@ pnpm dev
 - [ ] Enhance website performance:
     - [ ] Use [image component](https://docs.astro.build/en/guides/images/)
 - [ ] Add social media metadata (highlighted image, description)
+- [x] Add social links
 - [ ] make the user card sticky on desktop
 - [x] Update projects section.
     - [x] fill the content from data source (en/fr.json)
