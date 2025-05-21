@@ -1,11 +1,13 @@
 ---
 import { getEnvVar } from "@utils/env";
-import type { CTA } from "src/entities/profile"
+import type { CTA, SocialLinks } from "src/entities/profile"
+import SocialLinKs from "./SocialLinks.astro";
 
 interface Props {
-    cta: CTA
+    cta: CTA,
+    socialLinks: SocialLinks
 }
-const { cta } = Astro.props
+const { cta, socialLinks } = Astro.props
 const calendlyUrl = getEnvVar('ASTRO_PUBLIC_CALENDLY_URL');
 ---
 <!-- Footer Section -->
@@ -24,4 +26,5 @@ const calendlyUrl = getEnvVar('ASTRO_PUBLIC_CALENDLY_URL');
     >
         {cta.button}
     </a>
+    <SocialLinKs class="mt-10" socialLinks={socialLinks} />
 </footer>
