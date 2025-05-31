@@ -59,8 +59,8 @@ pnpm dev
 - [x] Update image sources for:
     - [x] projects
     - [x] certifications
-- [ ] Enhance website performance:
-    - [ ] Use [image component](https://docs.astro.build/en/guides/images/)
+- [x] Enhance website performance:
+    - [x] Use [image component](https://docs.astro.build/en/guides/images/)
 - [ ] Add social media metadata (highlighted image, description)
 - [x] Add social links
 - [ ] make the user card sticky on desktop
