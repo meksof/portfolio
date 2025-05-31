@@ -77,4 +77,11 @@ export interface Profile {
   projects: Projects;
   cta: CTA;
   certifications: Certifications;
+  socialLinks: SocialLinks;
 }
+
+export interface SocialLinks {
+  linkedin: string;
+  github: string;
+}
+
