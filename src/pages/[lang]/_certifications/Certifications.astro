@@ -1,6 +1,7 @@
 ---
 import CertificationItem from "./CertificationItem.astro";
 import type {Certifications} from "@entities/profile";
+import { Image } from 'astro:assets';
 
 interface Props {
     certifications: Certifications
@@ -31,9 +32,11 @@ const {certifications} = Astro.props
             href={`/${Astro.params.lang}/certifications`}
         >
             <span class="self-stretch my-auto">{certifications.showAll.replace('%i', certifications.items.length.toString())}</span>
-            <img
+            <Image
                 src="/images/arrowsoutlinenew-tab.svg"
-                alt="Arrow down"
+                alt="Arrow out"
+                width={18}
+                height={18}
                 class="object-contain overflow-hidden shrink-0 self-stretch my-auto aspect-square w-[18px]"
             />
         </a>

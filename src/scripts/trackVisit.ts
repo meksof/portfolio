@@ -1,4 +1,5 @@
-import type { VisitViewModel, Visit } from "./models";
+import { type VisitViewModel, type Visit, Cookies } from "./models";
+import { getCookie, setCookie } from "./utils";
 
 // Function to track a visit
 export function trackVisit(smtServer: string) {
@@ -12,7 +13,8 @@ export function trackVisit(smtServer: string) {
 
     // Record the start time
     const startTime = Date.now();
-    let sessionId: string = '';
+    let visitId: string = '';
+    let sessionId: string = getCookie(Cookies.sessionId) || '';
 
     // Create the request body
     const requestBody: VisitViewModel = {
@@ -21,6 +23,10 @@ export function trackVisit(smtServer: string) {
         page: fullUrl,
         duration: 0 // Initial duration is 0
     };
+
+    if (sessionId !== '') {
+        requestBody.sessionId = sessionId;
+    }
 
     // Send initial page view data (with 0 duration)
     fetch(`${smtServer}/track`, {
@@ -32,8 +38,12 @@ export function trackVisit(smtServer: string) {
     })
         .then(response => response.json())
         .then((data: Visit) => {
-            // Store the session ID from the initial response
-            sessionId = data.id;
+            visitId = data.id;
+            sessionId = data.sessionId;
+            
+            // Store the sessionId in a cookie for later use in tracking events
+            setCookie(Cookies.sessionId, sessionId);
+            setCookie(Cookies.visitId, visitId)
         })
         .catch(err => console.error('Error tracking initial visit:', err));
 
@@ -44,10 +54,10 @@ export function trackVisit(smtServer: string) {
 
     // Function to update session duration
     const updateSessionDuration = (duration: number) => {
-        if (!sessionId) return;
+        if (!visitId) return;
 
         const durationSeconds = Math.round(duration / 1000);
-        const updateUrl = `${smtServer}/track/${sessionId}`;
+        const updateUrl = `${smtServer}/track/${visitId}`;
 
         // Using FormData for sendBeacon
         const formData = new FormData();

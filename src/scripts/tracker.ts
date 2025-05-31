@@ -1,5 +1,7 @@
+import { Cookies, type EventViewModel } from "./models";
 import { trackEvent } from "./trackEvent";
 import { trackVisit } from "./trackVisit";
+import { getCookie } from "./utils";
 
 // Get SMT server URL from hidden input
 const smtServerInput = document.querySelector('input[name="smt-server"]') as HTMLInputElement;
@@ -19,7 +21,12 @@ trackElements.forEach((element) => {
     const eventValue = element.getAttribute('data-track-value') || 'unknown';
 
     element.addEventListener('click', () => {
+        const event: EventViewModel = {
+            type: eventType,
+            value: eventValue,
+            visitId: getCookie(Cookies.visitId) || ''
+        }
         // Call the function to track the event
-        trackEvent({ type: eventType, value: eventValue }, smtServer);
+        trackEvent(event, smtServer);
     });
 });

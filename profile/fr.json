@@ -5,7 +5,7 @@
     "title": "Développeur Frontend Senior",
     "avatar": {
       "alt": "Un homme souriant avec des lunettes, vêtu d'un t-shirt noire.",
-      "imageUrl": "/images/avatar.png"
+      "imageUrl": "/images/avatar.webp"
     },
     "name": "Sofiane MEKSI"
   },
@@ -43,7 +43,7 @@
         "role": "Développeur Frontend en CDD",
         "company": {
           "label": "Scalian",
-          "imageUrl": "/images/companies/scalian.jpg"
+          "imageUrl": "/images/companies/scalian.webp"
         },
         "period": "Fév 2024 - Avril 2024 · 3 mois",
         "description": "Chocolatine est une solution web pour gérer les résolutions de problèmes à travers la programmation par contrainte.",
@@ -69,7 +69,7 @@
         "role": "Développeur Frontend en interne",
         "company": {
           "label": "ANTEMETA",
-          "imageUrl": "/images/companies/antemeta.jpg"
+          "imageUrl": "/images/companies/antemeta.webp"
         },
         "period": "Avr 2020 - Août 2023 · 3 ans 5 mois",
         "description": "Implémenter les interfaces utilisateurs des produits Antemeta.",
@@ -98,7 +98,7 @@
         "role": "Développeur frontend (consultant)",
         "company": {
           "label": "IHEDN",
-          "imageUrl": "/images/companies/jeunes_ihedn.jpg"
+          "imageUrl": "/images/companies/jeunes_ihedn.webp"
         },
         "period": "Sept 2019 - Nov 2019 · 3 mois",
         "description": "Application mobile (iOS & ANDROID) destinée aux activités internes pour IHEDN, notification PUSH, Consultation des évènements / agenda, accès aux services depuis l'appli: espace de collaboration, Flux RSS.",
@@ -124,7 +124,7 @@
         "role": "Développeur frontend (consultant)",
         "company": {
           "label": "CNFPT",
-          "imageUrl": "/images/companies/cnfpt.jpg"
+          "imageUrl": "/images/companies/cnfpt.webp"
         },
         "period": "Mars 2019 - Juil 2019 · 5 mois",
         "description": "Portail de services, qui gère les sessions de formation des fonctionnaires de la fonction publique.",
@@ -153,7 +153,7 @@
         "role": "Développeur frontend (consultant)",
         "company": {
           "label": "Groupe RENAULT",
-          "imageUrl": "/images/companies/renault.jpg"
+          "imageUrl": "/images/companies/renault.webp"
         },
         "period": "Juil 2018 - Jan 2019 · 7 mois",
         "description": "La solution SMART CO2 permet de générer une fiche gamme commerciale de véhicules optimisées, en terme de taux d'émission de CO2.",
@@ -182,7 +182,7 @@
         "role": "Développeur frontend",
         "company": {
           "label": "Mobelite",
-          "imageUrl": "/images/companies/mobelite.jpg"
+          "imageUrl": "/images/companies/mobelite.webp"
         },
         "period": "Nov 2017 - Jan 2018 · 3 mois",
         "description": "eBroncho - Une application hybride (Android, iOS) de Listing des Descripteurs de Maladies Respiratoires, servant comme référence dans le domaine de la bronchoscopie.",
@@ -209,7 +209,7 @@
         "role": "Développeur frontend",
         "company": {
           "label": "Mobelite",
-          "imageUrl": "/images/companies/mobelite.jpg"
+          "imageUrl": "/images/companies/mobelite.webp"
         },
         "period": "Sept 2017 - Nov 2017 · 3 mois",
         "description": "myHR - Une application de gestion des ressources humaines: plannings d'équipes, demandes d'absences.",
@@ -235,7 +235,7 @@
         "role": "Développeur frontend",
         "company": {
           "label": "Mobelite",
-          "imageUrl": "/images/companies/mobelite.jpg"
+          "imageUrl": "/images/companies/mobelite.webp"
         },
         "period": "Mars 2017 - Sept 2017 · 7 mois",
         "description": "FinalSafe: une application de gestion des rapports de sécurité auprès des chantiers de construction de la société Eiffage.",
@@ -263,7 +263,7 @@
         "role": "Intégrateur web",
         "company": {
           "label": "Mobelite",
-          "imageUrl": "/images/companies/mobelite.jpg"
+          "imageUrl": "/images/companies/mobelite.webp"
         },
         "period": "Oct 2016 - Mars 2017 · 6 mois",
         "description": "Intranet chlorofil - espace de gestion des collectes, un lien d'échange et de collaboration des membres du GIE.",
@@ -292,7 +292,7 @@
         "role": "Intégrateur web",
         "company": {
           "label": "Mobelite",
-          "imageUrl": "/images/companies/mobelite.jpg"
+          "imageUrl": "/images/companies/mobelite.webp"
         },
         "period": "Juil 2016 - Oct 2016 · 4 mois",
         "description": "La gravelline.com - Un site ecommerce pour vente de produits à base de plantes biologiques.",
@@ -319,7 +319,7 @@
         "role": "Développeur fullstack (freelance)",
         "company": {
           "label": "DimaTech",
-          "imageUrl": "/images/companies/dimatech.jpg"
+          "imageUrl": "/images/companies/dimatech.webp"
         },
         "period": "Jan 2016 - Juin 2016 · 6 mois",
         "description": "Un répertoire de pages Facebook en moyen orient",
@@ -346,7 +346,7 @@
         "role": "Développeur web Freelance",
         "company": {
           "label": "Freelance",
-          "imageUrl": "/images/companies/freelancer_com.jpg"
+          "imageUrl": "/images/companies/freelancer_com.webp"
         },
         "period": "Jan 2014 - Jan 2016 · 2 ans",
         "description": "Développement de sites web et applications web en freelance.",
@@ -385,7 +385,7 @@
         "title": "EF SET English Certificate 63/100 (C1 Advanced)",
         "issuer": {
           "label": "EF SET",
-          "imageUrl": "/images/certifications/efset.jpg"
+          "imageUrl": "/images/certifications/efset.webp"
         },
         "issuedDate": "Issued Apr 2025"
       },
@@ -393,7 +393,7 @@
         "title": "UI Components II",
         "issuer": {
           "label": "Uxcel",
-          "imageUrl": "/images/certifications/uxcel.jpg"
+          "imageUrl": "/images/certifications/uxcel.webp"
         },
         "issuedDate": "Issued Dec 2024"
       },
@@ -401,7 +401,7 @@
         "title": "UX Design Patterns with Checklist Design",
         "issuer": {
           "label": "Uxcel",
-          "imageUrl": "/images/certifications/uxcel.jpg"
+          "imageUrl": "/images/certifications/uxcel.webp"
         },
         "issuedDate": "Issued Nov 2024"
       },
@@ -409,7 +409,7 @@
         "title": "Effective Angular Testing",
         "issuer": {
           "label": "HiRez.io",
-          "imageUrl": "/images/certifications/hirez_io.jpg"
+          "imageUrl": "/images/certifications/hirez_io.webp"
         },
         "issuedDate": "Issued Sep 2024"
       },
@@ -417,7 +417,7 @@
         "title": "Common Design Patterns",
         "issuer": {
           "label": "Uxcel",
-          "imageUrl": "/images/certifications/uxcel.jpg"
+          "imageUrl": "/images/certifications/uxcel.webp"
         },
         "issuedDate": "Issued Nov 2023"
       },
@@ -425,7 +425,7 @@
         "title": "Design Composition",
         "issuer": {
           "label": "Uxcel",
-          "imageUrl": "/images/certifications/uxcel.jpg"
+          "imageUrl": "/images/certifications/uxcel.webp"
         },
         "issuedDate": "Issued Nov 2023"
       },
@@ -433,7 +433,7 @@
         "title": "UI Components I",
         "issuer": {
           "label": "Uxcel",
-          "imageUrl": "/images/certifications/uxcel.jpg"
+          "imageUrl": "/images/certifications/uxcel.webp"
         },
         "issuedDate": "Issued Oct 2023"
       },
@@ -441,7 +441,7 @@
         "title": "Color Psychology",
         "issuer": {
           "label": "Uxcel",
-          "imageUrl": "/images/certifications/uxcel.jpg"
+          "imageUrl": "/images/certifications/uxcel.webp"
         },
         "issuedDate": "Issued Dec 2022"
       },
@@ -449,7 +449,7 @@
         "title": "UX/UI Design Foundations",
         "issuer": {
           "label": "Uxcel",
-          "imageUrl": "/images/certifications/uxcel.jpg"
+          "imageUrl": "/images/certifications/uxcel.webp"
         },
         "issuedDate": "Issued Feb 2022"
       },
@@ -457,7 +457,7 @@
         "title": "Angular 2 Testing and Debugging",
         "issuer": {
           "label": "Linkedin",
-          "imageUrl": "/images/certifications/linkedin.jpg"
+          "imageUrl": "/images/certifications/linkedin.webp"
         },
         "issuedDate": "Issued Nov 2017"
       },
@@ -465,7 +465,7 @@
         "title": "Building a Progressive Web App",
         "issuer": {
           "label": "Linkedin",
-          "imageUrl": "/images/certifications/linkedin.jpg"
+          "imageUrl": "/images/certifications/linkedin.webp"
         },
         "issuedDate": "Issued Nov 2017"
       },
@@ -473,7 +473,7 @@
         "title": "JavaScript: Templating",
         "issuer": {
           "label": "Linkedin",
-          "imageUrl": "/images/certifications/linkedin.jpg"
+          "imageUrl": "/images/certifications/linkedin.webp"
         },
         "issuedDate": "Issued Oct 2017"
       },
@@ -481,7 +481,7 @@
         "title": "CCNA",
         "issuer": {
           "label": "Cisco",
-          "imageUrl": "/images/certifications/cisco.jpg"
+          "imageUrl": "/images/certifications/cisco.webp"
         },
         "issuedDate": "Issued Jan 2011"
       }

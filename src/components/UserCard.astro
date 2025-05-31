@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { getEnvVar } from "@utils/env";
 import type { CTA, SocialLinks, UserCard } from "src/entities/profile";
 import SocialLinKs from "./SocialLinks.astro";
@@ -16,9 +17,12 @@ const calendlyUrl = getEnvVar("ASTRO_PUBLIC_CALENDLY_URL");
 <aside
     class="flex overflow-hidden flex-col items-center px-4 py-9 text-center bg-white rounded-3xl max-sm:border-none border border-solid border-gray-950 border-opacity-10 min-w-60 w-[270px] max-sm:w-full"
 >
-    <img
+    <Image
         src={userCard.avatar.imageUrl}
         alt={userCard.avatar.alt}
+        width={128}
+        height={128}
+        quality={80}
         class="object-contain overflow-hidden w-32 max-w-full aspect-square"
     />
     <div class="mt-10 max-w-full max-sm:w-full">

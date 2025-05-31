@@ -1,8 +1,10 @@
 import type { Event, EventViewModel } from "./models";
+import { getCookie } from "./utils";
 
 export function trackEvent(event: EventViewModel, smtServer: string) {
     // Create the request body
     const requestBody: EventViewModel = {
+        visitId: event.visitId,
         type: event.type,
         value: event.value,
     };

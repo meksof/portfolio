@@ -1,5 +1,6 @@
 ---
 import type { Project } from "@entities/profile";
+import { Image } from 'astro:assets';
 
 interface Props {
     project: Project;
@@ -14,9 +15,13 @@ const { project, readMoreText, showLessText } = Astro.props;
     <div
         class="flex flex-wrap gap-4 items-center w-full whitespace-nowrap max-md:max-w-full"
     >
-        <img
+        <Image
             src={project.company.imageUrl}
             alt={`${project.company.label} logo`}
+            width={64}
+            height={64}
+            format="webp"
+            quality={80}
             class="object-contain overflow-hidden shrink-0 self-center mx-auto my-0 w-16 aspect-square"
         />
         <div
