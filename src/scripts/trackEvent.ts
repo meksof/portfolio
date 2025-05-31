@@ -4,7 +4,7 @@ import { getCookie } from "./utils";
 export function trackEvent(event: EventViewModel, smtServer: string) {
     // Create the request body
     const requestBody: EventViewModel = {
-        visitId: getCookie('sessionId') || '',
+        visitId: event.visitId,
         type: event.type,
         value: event.value,
     };
