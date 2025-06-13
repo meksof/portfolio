@@ -1,25 +1,24 @@
 ---
 import ProjectItem from "./ProjectItem.astro";
-import type { Projects } from "@entities/profile";
 import { Image } from 'astro:assets';
+import { getContent } from '@utils/getContent';
+import { type Language } from '@utils/language';
 
-interface Props {
-    projects: Projects
-}
-const { projects } = Astro.props;
+const { lang } = Astro.params;
+const i18n = await getContent(lang as Language)
 ---
 
 <!-- Projects Section -->
 <article
     class="px-16 py-8 mt-4 w-full bg-white rounded-3xl max-sm:border-none border border-solid border-gray-950 border-opacity-10 max-md:px-5 max-md:max-w-full"
 >
-    <h2 class="text-3xl font-bold leading-tight text-gray-900">{projects.title}</h2>
+    <h2 class="text-3xl font-bold leading-tight text-gray-900">{i18n.projects.title}</h2>
 
-    {projects.items.slice(0, 3).map((project) => (
+    {i18n.projects.items.slice(0, 3).map((project) => (
         <ProjectItem 
             project={project} 
-            readMoreText={projects.readMore}
-            showLessText={projects.showLess}
+            readMoreText={i18n.projects.readMore}
+            showLessText={i18n.projects.showLess}
         />
     ))}
 
@@ -33,7 +32,7 @@ const { projects } = Astro.props;
             hover:bg-[#e8e7ff] transition-colors"
             href={`/${Astro.params.lang}/projects`}
         >
-            <span class="self-stretch my-auto">{projects.showAll.replace('%i', projects.items.length.toString())}</span>
+            <span class="self-stretch my-auto">{i18n.projects.showAll.replace('%i', i18n.projects.items.length.toString())}</span>
             <Image
                 src="/images/arrowsoutlinenew-tab.svg"
                 alt="Arrow out"

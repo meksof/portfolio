@@ -1,6 +1,11 @@
 {
   "title": "Portfolio - Sofiane MEKSI",
   "description": "Développeur Frontend Senior avec 9 ans d'expérience dans le web, je suis passionné par la création d'interfaces web intuitives et conviviales.",
+  "langSwitcher": {
+    "label": "Sélecteur de langue",
+    "en": "English",
+    "fr": "Français"
+  },
   "userCard": {
     "title": "Développeur Frontend Senior",
     "avatar": {

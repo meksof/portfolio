@@ -8,35 +8,30 @@ import StickyHeader from '@components/StickyHeader.astro';
 import Projects from './_projects/Projects.astro';
 import Certifications from './_certifications/Certifications.astro';
 import { availableLanguages } from '@utils/language.ts';
-import { getContent } from '@utils/getContent.ts';
 
 export async function getStaticPaths() {
   return availableLanguages.map(lang => ({ params: { lang } }));
 }
-const { lang } = Astro.params;
-const profile = await getContent(lang);
 ---
-<BaseLayout title={profile.title} lang={lang}>
+<BaseLayout>
     <main
       class="flex overflow-hidden flex-col px-24 py-16 max-[395px]:px-0 max-md:px-5 max-sm:-mr-1 max-sm:bg-white max-w-[1088px] mx-auto"
     >
-      <StickyHeader cta={profile.cta} />
-      <LanguageSwitcher lang={lang} />
+      <StickyHeader />
+      <LanguageSwitcher />
 
       <div class="flex flex-wrap gap-4 items-start w-full max-md:max-w-full">
-        <UserCard userCard={profile.userCard} cta={profile.cta} socialLinks={profile.socialLinks} />
+        <UserCard />
 
         <!-- Main Content -->
         <section class="flex-1 shrink basis-8 min-w-60 max-md:max-w-full">
-          <Bio bio={profile.bio} />
+          <Bio />
 
-          <Projects projects={profile.projects} />
+          <Projects />
 
-          <Certifications 
-            certifications={profile.certifications} 
-          />
+          <Certifications />
 
-          <Footer socialLinks={profile.socialLinks} cta={profile.cta} />
+          <Footer />
         </section>
       </div>
     </main>

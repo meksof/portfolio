@@ -1,13 +1,11 @@
 ---
 import { getEnvVar } from "@utils/env";
-import type { CTA, SocialLinks } from "src/entities/profile"
+import { getContent } from '@utils/getContent';
+import { type Language } from '@utils/language';
 import SocialLinKs from "./SocialLinks.astro";
 
-interface Props {
-    cta: CTA,
-    socialLinks: SocialLinks
-}
-const { cta, socialLinks } = Astro.props
+const { lang } = Astro.params;
+const i18n = await getContent(lang as Language)
 const calendlyUrl = getEnvVar('ASTRO_PUBLIC_CALENDLY_URL');
 ---
 <!-- Footer Section -->
@@ -15,7 +13,7 @@ const calendlyUrl = getEnvVar('ASTRO_PUBLIC_CALENDLY_URL');
     class="flex flex-col justify-center items-center max-md:px-5 mt-4 w-full font-bold text-center min-h-[200px] max-md:max-w-full"
 >
     <p class="text-base text-gray-700 max-md:max-w-full">
-        {cta.message}
+        {i18n.cta.message}
     </p>
     <a
         class="gap-2.5 px-3 py-2.5 mt-10 w-[236px] text-base leading-relaxed text-white bg-[#6C3CE9] hover:bg-[#5B32C7] rounded-md min-h-11 max-sm:self-center transition-colors"
@@ -24,7 +22,7 @@ const calendlyUrl = getEnvVar('ASTRO_PUBLIC_CALENDLY_URL');
         data-track="click"
         data-track-value="CTA_footer"
     >
-        {cta.button}
+        {i18n.cta.button}
     </a>
-    <SocialLinKs class="mt-10" socialLinks={socialLinks} />
+    <SocialLinKs class="mt-10" socialLinks={i18n.socialLinks} />
 </footer>

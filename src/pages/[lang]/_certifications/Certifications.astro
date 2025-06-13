@@ -1,22 +1,21 @@
 ---
 import CertificationItem from "./CertificationItem.astro";
-import type {Certifications} from "@entities/profile";
 import { Image } from 'astro:assets';
+import { getContent } from '@utils/getContent';
+import { type Language } from '@utils/language';
 
-interface Props {
-    certifications: Certifications
-}
-const {certifications} = Astro.props
+const { lang } = Astro.params;
+const i18n = await getContent(lang as Language)
 ---
 
 <!-- Certifications Section -->
 <article
     class="px-16 py-8 mt-4 w-full bg-white rounded-3xl max-sm:border-none border border-solid border-gray-950 border-opacity-10 max-md:px-5 max-md:max-w-full"
 >
-    <h2 class="font-bold text-3xl leading-tight text-gray-900">{certifications.title}</h2>
+    <h2 class="font-bold text-3xl leading-tight text-gray-900">{i18n.certifications.title}</h2>
 
     <div class="flex flex-col gap-4 mt-6 w-full max-md:max-w-full">
-        {certifications.items.slice(0, 3).map((certification, index) => (
+        {i18n.certifications.items.slice(0, 3).map((certification, index) => (
             <CertificationItem certification={certification} index={index} />
         ))}
     </div>
@@ -31,7 +30,7 @@ const {certifications} = Astro.props
             hover:bg-[#e8e7ff] transition-colors"
             href={`/${Astro.params.lang}/certifications`}
         >
-            <span class="self-stretch my-auto">{certifications.showAll.replace('%i', certifications.items.length.toString())}</span>
+            <span class="self-stretch my-auto">{i18n.certifications.showAll.replace('%i', i18n.certifications.items.length.toString())}</span>
             <Image
                 src="/images/arrowsoutlinenew-tab.svg"
                 alt="Arrow out"

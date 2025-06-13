@@ -1,15 +1,12 @@
 ---
 import { Image } from 'astro:assets';
 import { getEnvVar } from "@utils/env";
-import type { CTA, SocialLinks, UserCard } from "src/entities/profile";
+import { getContent } from '@utils/getContent';
+import { type Language } from '@utils/language';
 import SocialLinKs from "./SocialLinks.astro";
 
-interface Props {
-    userCard: UserCard;
-    cta: CTA;
-    socialLinks: SocialLinks;
-}
-const { userCard, cta, socialLinks } = Astro.props;
+const { lang } = Astro.params;
+const i18n = await getContent(lang as Language)
 const calendlyUrl = getEnvVar("ASTRO_PUBLIC_CALENDLY_URL");
 ---
 
@@ -18,8 +15,8 @@ const calendlyUrl = getEnvVar("ASTRO_PUBLIC_CALENDLY_URL");
     class="flex overflow-hidden flex-col items-center px-4 py-9 text-center bg-white rounded-3xl max-sm:border-none border border-solid border-gray-950 border-opacity-10 min-w-60 w-[270px] max-sm:w-full"
 >
     <Image
-        src={userCard.avatar.imageUrl}
-        alt={userCard.avatar.alt}
+        src={i18n.userCard.avatar.imageUrl}
+        alt={i18n.userCard.avatar.alt}
         width={128}
         height={128}
         quality={80}
@@ -29,10 +26,10 @@ const calendlyUrl = getEnvVar("ASTRO_PUBLIC_CALENDLY_URL");
         <h1
             class="text-3xl font-bold leading-none text-gray-900 max-sm:mr-5 max-sm:w-full"
         >
-            {userCard.name}
+            {i18n.userCard.name}
         </h1>
         <p class="mt-2 text-sm leading-none text-gray-700">
-            {userCard.title}
+            {i18n.userCard.title}
         </p>
     </div>
     <a
@@ -42,7 +39,7 @@ const calendlyUrl = getEnvVar("ASTRO_PUBLIC_CALENDLY_URL");
         data-track="click"
         data-track-value="CTA_user_card"
     >
-        {cta.button}
+        {i18n.cta.button}
     </a>
-    <SocialLinKs class="mt-10" socialLinks={socialLinks} />
+    <SocialLinKs class="mt-10" socialLinks={i18n.socialLinks} />
 </aside>

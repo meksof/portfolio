@@ -4,10 +4,14 @@ export type Visit = {
 }
 export type VisitViewModel = {
     referrer: string;
-    utm_source: string | null;
+    utmSource: string | null;
     page: string;
-    duration: number;
+    createTimestamp: number;
     sessionId?: string;
+}
+
+export type VisitUpdateViewModel = {
+    updateTimestamp: number;
 }
 
 export type Event = {

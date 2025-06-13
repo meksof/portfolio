@@ -1,12 +1,10 @@
 ---
 import { getEnvVar } from '@utils/env';
-import type { CTA } from 'src/entities/profile';
+import { getContent } from '@utils/getContent';
+import { type Language } from '@utils/language';
 
-interface Props {
-    cta: CTA;
-}
-
-const { cta } = Astro.props;
+const { lang } = Astro.params;
+const i18n = await getContent(lang as Language)
 const calendlyUrl = getEnvVar('ASTRO_PUBLIC_CALENDLY_URL');
 ---
 
@@ -21,7 +19,7 @@ const calendlyUrl = getEnvVar('ASTRO_PUBLIC_CALENDLY_URL');
         data-track="click"
         data-track-value="CTA_sticky_header"
     >
-        {cta.button}
+        {i18n.cta.button}
     </a>
 </header>
 

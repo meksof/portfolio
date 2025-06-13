@@ -1,10 +1,13 @@
 ---
-const { title, lang } = Astro.props;
+import { getContent } from '@utils/getContent';
 import pkg from '../../package.json';
 
 import { getEnvVar } from '@utils/env';
+import { type Language } from '@utils/language';
 
 const APP_VERSION = pkg.version || '0.0.0';
+const { lang } = Astro.params;
+const i18n = await getContent(lang as Language)
 const smtServer = getEnvVar('SMT_SERVER')
 ---
 
@@ -12,7 +15,7 @@ const smtServer = getEnvVar('SMT_SERVER')
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{title}</title>
+        <title>{i18n.title}</title>
         <!-- Roboto font family here -->
         <link
             rel="preload"

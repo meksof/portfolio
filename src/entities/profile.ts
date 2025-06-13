@@ -72,6 +72,7 @@ export interface Certifications {
 export interface Profile {
   title: string;
   description: string;
+  langSwitcher: LangSwitcher;
   userCard: UserCard;
   bio: Bio;
   projects: Projects;
@@ -85,3 +86,8 @@ export interface SocialLinks {
   github: string;
 }
 
+export interface LangSwitcher {
+  label: string;
+  en: string;
+  fr: string;
+}

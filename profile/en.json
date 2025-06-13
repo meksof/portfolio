@@ -1,6 +1,11 @@
 {
   "title": "Sofiane MEKSI - Portfolio",
   "description": "Portfolio of Sofiane MEKSI, a Senior Frontend Developer with 9 years of experience in web development.",
+  "langSwitcher": {
+    "label": "Language switcher",
+    "en": "English",
+    "fr": "Français"
+  },
   "userCard": {
     "title": "Senior Frontend Developer",
     "avatar": {

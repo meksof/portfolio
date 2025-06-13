@@ -1,4 +1,4 @@
-import { type VisitViewModel, type Visit, Cookies } from "./models";
+import { type VisitViewModel, type Visit, Cookies, type VisitUpdateViewModel } from "./models";
 import { getCookie, setCookie } from "./utils";
 
 // Function to track a visit
@@ -19,9 +19,9 @@ export function trackVisit(smtServer: string) {
     // Create the request body
     const requestBody: VisitViewModel = {
         referrer,
-        utm_source: utmSource,
+        utmSource: utmSource,
         page: fullUrl,
-        duration: 0 // Initial duration is 0
+        createTimestamp: startTime
     };
 
     if (sessionId !== '') {
@@ -47,45 +47,40 @@ export function trackVisit(smtServer: string) {
         })
         .catch(err => console.error('Error tracking initial visit:', err));
 
-    // Track time on page using visibility change and beforeunload
-    let lastVisibleTime = startTime;
-    let totalActiveTime = 0;
-    let isDocumentVisible = true;
-
     // Function to update session duration
-    const updateSessionDuration = (duration: number) => {
+    const updateSessionTimestamp = (update_timestamp: number) => {
         if (!visitId) return;
 
-        const durationSeconds = Math.round(duration / 1000);
         const updateUrl = `${smtServer}/track/${visitId}`;
 
-        // Using FormData for sendBeacon
         const formData = new FormData();
-        formData.append('duration', durationSeconds.toString());
+        formData.append('update_timestamp', update_timestamp.toString());
 
+        // Try to send using sendBeacon
         if (navigator.sendBeacon) {
-            // Set proper headers for FormData
-            const blob = new Blob([], { type: 'application/x-www-form-urlencoded' });
-            // Append the duration to the blob
-            const durationString = `duration=${encodeURIComponent(durationSeconds.toString())}`;
-            const updatedBlob = new Blob([blob, durationString], { type: 'application/x-www-form-urlencoded' });
-            navigator.sendBeacon(updateUrl, updatedBlob);
-
-            // Alternative approach that actually sends the data:
-            if (!navigator.sendBeacon(updateUrl, updatedBlob)) {
+            const success = navigator.sendBeacon(updateUrl, formData);
+            
+            if (!success) {
                 // Fallback to fetch if sendBeacon fails
                 sendWithFetch();
             }
         } else {
-            // Fallback to fetch
+            // Fallback to fetch if sendBeacon is not available
             sendWithFetch();
         }
 
         function sendWithFetch() {
             // For fetch, we can use proper headers
+            const updatePayload: VisitUpdateViewModel = {
+                updateTimestamp: Date.now()
+            };
+
             fetch(updateUrl, {
                 method: 'POST',
-                body: formData, // Let the browser set proper headers
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(updatePayload),
                 keepalive: true
             }).catch(err => console.error('Error updating duration:', err));
         }
@@ -95,32 +90,19 @@ export function trackVisit(smtServer: string) {
     document.addEventListener('visibilitychange', () => {
         const now = Date.now();
         if (document.visibilityState === 'hidden') {
-            // Document became hidden - record active time
-            totalActiveTime += now - lastVisibleTime;
-            isDocumentVisible = false;
-            updateSessionDuration(totalActiveTime);
-        } else {
-            // Document became visible again
-            lastVisibleTime = now;
-            isDocumentVisible = true;
+            updateSessionTimestamp(now);
         }
     });
 
     // Handle page unload
     window.addEventListener('pagehide', () => {
         const now = Date.now();
-        if (isDocumentVisible) {
-            totalActiveTime += now - lastVisibleTime;
-        }
-        updateSessionDuration(totalActiveTime);
+        updateSessionTimestamp(now);
     });
 
     // Fallback for older browsers
     window.addEventListener('beforeunload', () => {
         const now = Date.now();
-        if (isDocumentVisible) {
-            totalActiveTime += now - lastVisibleTime;
-        }
-        updateSessionDuration(totalActiveTime);
+        updateSessionTimestamp(now);
     });
 }

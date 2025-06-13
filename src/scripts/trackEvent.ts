@@ -18,7 +18,6 @@ export function trackEvent(event: EventViewModel, smtServer: string) {
         body: JSON.stringify(requestBody)
     })
         .then(response => response.json())
-        .then((data: Event) => console.log('Event tracked:', data)) // Todo: Remove this line in production
         .catch(err => console.error('Error tracking event:', err));
     
 }

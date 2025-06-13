@@ -1,26 +1,34 @@
 ---
-import { LanguageEnum } from "@utils/language";
+import { type Language, LanguageEnum } from "@utils/language";
+import { getContent } from "@utils/getContent";
 
-const { lang } = Astro.props;
+const { lang } = Astro.params;
+
+const i18n = await getContent(lang as Language);
+
+
 ---
 <!-- Language switcher -->
 <nav
+    aria-label={i18n.langSwitcher.label}
     class="flex gap-3 items-center self-end mt-6 mb-4 text-lg font-bold leading-none whitespace-nowrap max-sm:self-center"
 >
     <a
         class=`self-stretch my-auto text-gray-900 hover:opacity-100 ${lang === LanguageEnum.EN ? '' : 'opacity-60'}`
-        aria-pressed="true"
         id="lang-en"
         href="/en/"
+        aria-current={lang === LanguageEnum.EN ? 'true' : undefined }
+        aria-label={i18n.langSwitcher.en}
     >
-        EN
+        <span aria-hidden="true">EN</span>
     </a>
     <a
         class=`self-stretch my-auto text-gray-900 hover:opacity-100 ${lang === LanguageEnum.FR ? '' : 'opacity-60'}`
-        aria-pressed="false"
         id="lang-fr"
         href="/fr/"
+        aria-current={lang === LanguageEnum.FR ? 'true' : undefined }
+        aria-label={i18n.langSwitcher.fr}
     >
-        FR
+        <span aria-hidden="true">FR</span>
     </a>
 </nav>
