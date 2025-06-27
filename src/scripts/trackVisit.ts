@@ -53,12 +53,14 @@ export function trackVisit(smtServer: string) {
 
         const updateUrl = `${smtServer}/track/${visitId}`;
 
-        const formData = new FormData();
-        formData.append('update_timestamp', update_timestamp.toString());
-
         // Try to send using sendBeacon
         if (navigator.sendBeacon) {
-            const success = navigator.sendBeacon(updateUrl, formData);
+            // Set proper headers for FormData
+            const blob = new Blob([], { type: 'application/x-www-form-urlencoded' });
+            // Append the duration to the blob
+            const durationString = `update_timestamp=${encodeURIComponent(update_timestamp.toString())}`;
+            const updatedBlob = new Blob([blob, durationString], { type: 'application/x-www-form-urlencoded' });
+            const success = navigator.sendBeacon(updateUrl, updatedBlob);
             
             if (!success) {
                 // Fallback to fetch if sendBeacon fails
