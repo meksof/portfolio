@@ -62,9 +62,8 @@ export function trackVisit(smtServer: string) {
             // Set proper headers for FormData
             const blob = new Blob([], { type: 'application/x-www-form-urlencoded' });
             // Append the duration to the blob
-            const durationString = `duration=${encodeURIComponent(duration.toString())}`;
-            const updateTimestampString = `update_timestamp=${encodeURIComponent(Date.now().toString())}`;
-            const updatedBlob = new Blob([blob, durationString, updateTimestampString], { type: 'application/x-www-form-urlencoded' });
+            const params = `duration=${encodeURIComponent(duration.toString())}&update_timestamp=${encodeURIComponent(Date.now().toString())}`;
+            const updatedBlob = new Blob([blob, params], { type: 'application/x-www-form-urlencoded' });
             const success = navigator.sendBeacon(updateUrl, updatedBlob);
             
             if (!success) {
@@ -84,7 +83,7 @@ export function trackVisit(smtServer: string) {
             };
 
             fetch(updateUrl, {
-                method: 'POST',
+                method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json'
                 },
