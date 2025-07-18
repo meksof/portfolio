@@ -16,6 +16,10 @@ export function trackVisit(smtServer: string) {
     let visitId: string = '';
     let sessionId: string = getCookie(Cookies.sessionId) || '';
 
+    // Track total visible duration and last visible timestamp
+    let totalVisibleDuration = 0;
+    let lastVisibleTime = startTime;
+
     // Create the request body
     const requestBody: VisitViewModel = {
         referrer,
@@ -48,7 +52,7 @@ export function trackVisit(smtServer: string) {
         .catch(err => console.error('Error tracking initial visit:', err));
 
     // Function to update session duration
-    const updateSessionTimestamp = (update_timestamp: number) => {
+    const updateSessionTimestamp = (duration: number) => {
         if (!visitId) return;
 
         const updateUrl = `${smtServer}/track/${visitId}`;
@@ -58,8 +62,9 @@ export function trackVisit(smtServer: string) {
             // Set proper headers for FormData
             const blob = new Blob([], { type: 'application/x-www-form-urlencoded' });
             // Append the duration to the blob
-            const durationString = `update_timestamp=${encodeURIComponent(update_timestamp.toString())}`;
-            const updatedBlob = new Blob([blob, durationString], { type: 'application/x-www-form-urlencoded' });
+            const durationString = `duration=${encodeURIComponent(duration.toString())}`;
+            const updateTimestampString = `update_timestamp=${encodeURIComponent(Date.now().toString())}`;
+            const updatedBlob = new Blob([blob, durationString, updateTimestampString], { type: 'application/x-www-form-urlencoded' });
             const success = navigator.sendBeacon(updateUrl, updatedBlob);
             
             if (!success) {
@@ -74,6 +79,7 @@ export function trackVisit(smtServer: string) {
         function sendWithFetch() {
             // For fetch, we can use proper headers
             const updatePayload: VisitUpdateViewModel = {
+                duration: duration,
                 updateTimestamp: Date.now()
             };
 
@@ -92,19 +98,31 @@ export function trackVisit(smtServer: string) {
     document.addEventListener('visibilitychange', () => {
         const now = Date.now();
         if (document.visibilityState === 'hidden') {
-            updateSessionTimestamp(now);
+            // Add the time spent since last visible to total duration
+            totalVisibleDuration += now - lastVisibleTime;
+        } else if (document.visibilityState === 'visible') {
+            // Reset the last visible time
+            lastVisibleTime = now;
         }
+        updateSessionTimestamp(totalVisibleDuration);
     });
 
     // Handle page unload
     window.addEventListener('pagehide', () => {
         const now = Date.now();
-        updateSessionTimestamp(now);
+        // Add the last visible period if the page is still visible
+        if (document.visibilityState === 'visible') {
+            totalVisibleDuration += now - lastVisibleTime;
+        }
+        updateSessionTimestamp(totalVisibleDuration);
     });
 
     // Fallback for older browsers
     window.addEventListener('beforeunload', () => {
         const now = Date.now();
-        updateSessionTimestamp(now);
+        if (document.visibilityState === 'visible') {
+            totalVisibleDuration += now - lastVisibleTime;
+        }
+        updateSessionTimestamp(totalVisibleDuration);
     });
 }
