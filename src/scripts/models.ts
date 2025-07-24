@@ -11,7 +11,7 @@ export type VisitViewModel = {
 }
 
 export type VisitUpdateViewModel = {
-    duration: number;
+    duration: number; // duration in milliseconds
     updateTimestamp: number;
 }
 

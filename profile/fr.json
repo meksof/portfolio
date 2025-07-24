@@ -16,21 +16,11 @@
   },
   "bio": {
     "title": "Bio",
-    "intro": "Avec 9 ans d'expérience dans le web, j'aide les entreprises à développer des interfaces web intuitives et conviviales. Au quotidien, je met en place mon savoir-faire au service des utilisateurs.",
-    "skills": [
-      "Je garantis que le site web est adapté aux écrans mobiles, tablettes et ordinateurs de bureau.",
-      "Je réalise des tests unitaires",
-      "Je crée des prototypes et des wireframes."
-    ],
-    "techIntro": "Je maîtrise les technologies suivantes :",
-    "technologies": [
-      "Typescript / Angular",
-      "HTML / CSS",
-      "RxJS / NGRX",
-      "jasmine, Jest",
-      "figma, balsamiq, draw.io"
-    ],
-    "values": "Partage de connaissances, team spirit et respect mutuel sont les valeurs que je recherche dans une culture d'équipe."
+    "intro": "Développeur Frontend Senior spécialisé Angular avec 9 ans d'expérience dans la création d'applications web scalables.",
+    "skills": [],
+    "techIntro": "Expert en architecture frontend moderne (Angular 17, TypeScript, NgRx) avec un focus sur l'expérience utilisateur et la performance.",
+    "technologies": [],
+    "values": "À la recherche de nouveaux défis techniques dans une équipe produit pour contribuer  à des projets d'envergure avec Angular/Vuejs et les technologies modernes."
   },
   "projects": {
     "title": "Projets",
@@ -50,13 +40,15 @@
           "label": "Scalian",
           "imageUrl": "/images/companies/scalian.webp"
         },
-        "period": "Fév 2024 - Avril 2024 · 3 mois",
-        "description": "Chocolatine est une solution web pour gérer les résolutions de problèmes à travers la programmation par contrainte.",
+        "period": "Jan 2024 - Sep 2024 · 9 mois",
+        "description": "Chocolatine - Plateforme SaaS de résolution de problèmes par programmation par contrainte",
         "team": "Équipe technique: 4 développeurs.",
         "responsibilities": [
-          "Proposer une maquette à mettre en place pour la plateforme",
-          "Afficher et gérer les détails d'un problème",
-          "Gérer l'interfaçage avec l'api du backend."
+          "Conception et développement de l'interface utilisateur d'une solution innovante de résolution automatisée de problèmes complexes",
+          "Création d'un système de visualisation intuitive permettant aux utilisateurs non-techniques de paramétrer des contraintes complexes",
+          "Développement d'un dashboard temps réel affichant le statut des résolutions et les métriques de performance",
+          "Collaboration étroite avec l'équipe backend pour optimiser les échanges API et réduire les temps de réponse de 40%",
+          "Livraison en mode agile avec prototypage rapide sur Figma et validation utilisateur continue"
         ],
         "technologies": [
           "Angular 17",
@@ -77,13 +69,15 @@
           "imageUrl": "/images/companies/antemeta.webp"
         },
         "period": "Avr 2020 - Août 2023 · 3 ans 5 mois",
-        "description": "Implémenter les interfaces utilisateurs des produits Antemeta.",
+        "description": "Portal - Plateforme SaaS de monitoring des services cloud B2B",
         "team": "3 dev full stack + ingénieur devops + manager",
         "responsibilities": [
-          "Wireframing et prototypage.",
-          "Développement et implémentation de features.",
-          "Rédaction des US et documentation.",
-          "Mise en place des Tests unitaires."
+          "Refonte complète de l'architecture frontend d'une application critique servant +500 clients entreprise",
+          "Développement et maintenance d'un design system réutilisable, réduisant le temps de développement de nouvelles features de 30%",
+          "Implémentation d'un système d'analytics avancé permettant le suivi en temps réel de l'utilisation des services cloud",
+          "Migration technique majeure vers Angular 14 avec zéro interruption de service et amélioration des performances de 25%",
+          "Encadrement technique : code reviews, pair programming et formation de 2 développeurs junior",
+          "Mise en place d'une stratégie de tests unitaires atteignant 85% de couverture de code"
         ],
         "technologies": [
           "Typescript",
@@ -93,8 +87,8 @@
           "Jest",
           "Angular 14",
           "Figma",
-          "Balsamiq",
-          "Scrum",
+          "Storybook",
+          "Matomo",
           "Azure Devops"
         ]
       },
@@ -105,13 +99,15 @@
           "label": "IHEDN",
           "imageUrl": "/images/companies/jeunes_ihedn.webp"
         },
-        "period": "Sept 2019 - Nov 2019 · 3 mois",
-        "description": "Application mobile (iOS & ANDROID) destinée aux activités internes pour IHEDN, notification PUSH, Consultation des évènements / agenda, accès aux services depuis l'appli: espace de collaboration, Flux RSS.",
+        "period": "Aout 2019 - Fev 2020 · 7 mois",
+        "description": "Application mobile interne - Institut des Hautes Études de Défense Nationale",
         "team": "2 software engineers",
         "responsibilities": [
-          "Développement de plugin (en javascript natif)",
-          "Interfaçage aux Api IHEDN existantes",
-          "Développement de scripts de crawling, alimentation de la base donnée mobile"
+          "Développement d'une application mobile hybride pour 2000+ membres de l'institution",
+          "Création d'un système de notifications push intelligent pour les événements institutionnels",
+          "Développement de plugins JavaScript natifs pour l'intégration aux systèmes legacy IHEDN",
+          "Implémentation d'un système de synchronisation offline permettant l'accès aux contenus sans connexion",
+          "Automatisation du processus de crawling et d'alimentation de la base de données mobile"
         ],
         "technologies": [
           "Javascript",
@@ -132,15 +128,14 @@
           "imageUrl": "/images/companies/cnfpt.webp"
         },
         "period": "Mars 2019 - Juil 2019 · 5 mois",
-        "description": "Portail de services, qui gère les sessions de formation des fonctionnaires de la fonction publique.",
+        "description": "Portail de formation - Centre National de la Fonction Publique Territoriale",
         "team": "9 personnes (Développeurs + SM + Testeurs QA)",
         "responsibilities": [
-          "Réalisation en mode agile de la refonte du portail de services",
-          "Développement de la partie front de l'application",
-          "Intégration des maquettes (Responsive Design)",
-          "Propositions de composants UI (open source ou from scratch) à mettre en place dans l'application web",
-          "Correction des anomalies visuelles",
-          "Démonstration devant le comité de direction sur la partie réalisée pendant une itération."
+          "Refonte complète du portail de formation desservant 50 000+ fonctionnaires territoriaux",
+          "Développement en méthodologie agile d'une interface responsive optimisée pour tous supports",
+          "Création d'une bibliothèque de composants UI réutilisables, accélérant les développements futurs de 40%",
+          "Résolution proactive d'anomalies visuelles critiques identifiées lors des tests utilisateur",
+          "Présentation des livrables devant le comité de direction avec validation technique et fonctionnelle"
         ],
         "technologies": [
           "Angular 5",
@@ -164,10 +159,11 @@
         "description": "La solution SMART CO2 permet de générer une fiche gamme commerciale de véhicules optimisées, en terme de taux d'émission de CO2.",
         "team": "5 personnes (Développeurs + SM + Testeurs QA)",
         "responsibilities": [
-          "Mise en place de la structure du projet front, des outils, et de la chaine d'intégration continue pour la partie front.",
-          "Développement de composants (from scratch, ou à partir de librairies open source existantes).",
-          "Propositions de librairies et technologies front-end.",
-          "Mise en place du système d'authentification OPENID."
+          "Conception de l'architecture frontend d'une application stratégique d'analyse des émissions CO2",
+          "Mise en place d'un système d'analyse de traffic (localisation, parcours utilisateurs, taille des écrans, ...)",
+          "Implémentation du système d'authentification OpenID Connect pour l'intégration dans l'écosystème Renault",
+          "Création d'un dashboard analytics avancé permettant le suivi des performances environnementales par modèle",
+          "Contribution directe à la migration vers les nouvelles normes européenne WLTP"
         ],
         "technologies": [
           "Angular 6",
@@ -179,7 +175,7 @@
           "Karma",
           "jasmine unit test",
           "gitlabci",
-          "Scrum"
+          "Matomo"
         ]
       },
       {
@@ -189,6 +185,7 @@
           "label": "Mobelite",
           "imageUrl": "/images/companies/mobelite.webp"
         },
+        "client": "Elsevier Masson",
         "period": "Nov 2017 - Jan 2018 · 3 mois",
         "description": "eBroncho - Une application hybride (Android, iOS) de Listing des Descripteurs de Maladies Respiratoires, servant comme référence dans le domaine de la bronchoscopie.",
         "team": "4 personnes (Développeurs + SM + Testeurs QA)",
@@ -210,39 +207,14 @@
         ]
       },
       {
-        "title": "myHR",
-        "role": "Développeur frontend",
-        "company": {
-          "label": "Mobelite",
-          "imageUrl": "/images/companies/mobelite.webp"
-        },
-        "period": "Sept 2017 - Nov 2017 · 3 mois",
-        "description": "myHR - Une application de gestion des ressources humaines: plannings d'équipes, demandes d'absences.",
-        "team": "4 personnes (Développeurs + SM + Testeurs QA)",
-        "responsibilities": [
-          "Intégration du design",
-          "Création de nouveau composants",
-          "Adaptation des plugins",
-          "Responsive Design"
-        ],
-        "technologies": [
-          "AngularJS",
-          "Progressive Web App",
-          "Single Web App",
-          "FullCalendar.js plugin",
-          "CSS",
-          "Material Design",
-          "Git"
-        ]
-      },
-      {
         "title": "FinalSafe",
         "role": "Développeur frontend",
         "company": {
           "label": "Mobelite",
           "imageUrl": "/images/companies/mobelite.webp"
         },
-        "period": "Mars 2017 - Sept 2017 · 7 mois",
+        "client": "Eiffage construction",
+        "period": "Mars 2017 - Nov 2017 · 9 mois",
         "description": "FinalSafe: une application de gestion des rapports de sécurité auprès des chantiers de construction de la société Eiffage.",
         "team": "12 personnes (Développeurs + SM + Testeurs QA)",
         "responsibilities": [
@@ -270,6 +242,7 @@
           "label": "Mobelite",
           "imageUrl": "/images/companies/mobelite.webp"
         },
+        "client": "Chapeau de paille",
         "period": "Oct 2016 - Mars 2017 · 6 mois",
         "description": "Intranet chlorofil - espace de gestion des collectes, un lien d'échange et de collaboration des membres du GIE.",
         "team": "7 personnes (Développeurs + SM + Testeurs QA)",
@@ -299,6 +272,7 @@
           "label": "Mobelite",
           "imageUrl": "/images/companies/mobelite.webp"
         },
+        "client": "Gravelline",
         "period": "Juil 2016 - Oct 2016 · 4 mois",
         "description": "La gravelline.com - Un site ecommerce pour vente de produits à base de plantes biologiques.",
         "team": "3 personnes (Développeurs + SM + Testeurs QA)",
@@ -353,6 +327,12 @@
           "label": "Freelance",
           "imageUrl": "/images/companies/freelancer_com.webp"
         },
+        "clients": [
+          "Business Catalyst",
+          "Dimatech",
+          "Moussa BTP",
+          "Particuliers"
+        ],
         "period": "Jan 2014 - Jan 2016 · 2 ans",
         "description": "Développement de sites web et applications web en freelance.",
         "team": "N/A",

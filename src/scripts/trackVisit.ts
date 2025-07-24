@@ -17,7 +17,7 @@ export function trackVisit(smtServer: string) {
     let sessionId: string = getCookie(Cookies.sessionId) || '';
 
     // Track total visible duration and last visible timestamp
-    let totalVisibleDuration = 0;
+    let totalVisibleDuration = 0; // duration in milliseconds
     let lastVisibleTime = startTime;
 
     // Create the request body
