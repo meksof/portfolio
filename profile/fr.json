@@ -16,11 +16,11 @@
   },
   "bio": {
     "title": "Bio",
-    "intro": "Développeur Frontend Senior spécialisé Angular avec 9 ans d'expérience dans la création d'applications web scalables.",
+    "intro": "Développeur Frontend Senior avec 10 ans d'expérience dans la création d'applications web scalables.",
     "skills": [],
     "techIntro": "Expert en architecture frontend moderne (Angular 17, TypeScript, NgRx) avec un focus sur l'expérience utilisateur et la performance.",
     "technologies": [],
-    "values": "À la recherche de nouveaux défis techniques dans une équipe produit pour contribuer  à des projets d'envergure avec Angular/Vuejs et les technologies modernes."
+    "values": "À la recherche de nouveaux défis techniques dans une équipe produit pour contribuer à des projets d'envergure et des technologies modernes."
   },
   "projects": {
     "title": "Projets",
@@ -42,7 +42,7 @@
         },
         "period": "Jan 2024 - Sep 2024 · 9 mois",
         "description": "Chocolatine - Plateforme SaaS de résolution de problèmes par programmation par contrainte",
-        "team": "Équipe technique: 4 développeurs.",
+        "team": "Équipe technique de 4 développeurs.",
         "responsibilities": [
           "Conception et développement de l'interface utilisateur d'une solution innovante de résolution automatisée de problèmes complexes",
           "Création d'un système de visualisation intuitive permettant aux utilisateurs non-techniques de paramétrer des contraintes complexes",
@@ -70,7 +70,7 @@
         },
         "period": "Avr 2020 - Août 2023 · 3 ans 5 mois",
         "description": "Portal - Plateforme SaaS de monitoring des services cloud B2B",
-        "team": "3 dev full stack + ingénieur devops + manager",
+        "team": "2 dev full stack + architecte logiciel + manager",
         "responsibilities": [
           "Refonte complète de l'architecture frontend d'une application critique servant +500 clients entreprise",
           "Développement et maintenance d'un design system réutilisable, réduisant le temps de développement de nouvelles features de 30%",
@@ -93,43 +93,14 @@
         ]
       },
       {
-        "title": "Ihedn Mobile",
-        "role": "Développeur frontend (consultant)",
-        "company": {
-          "label": "IHEDN",
-          "imageUrl": "/images/companies/jeunes_ihedn.webp"
-        },
-        "period": "Aout 2019 - Fev 2020 · 7 mois",
-        "description": "Application mobile interne - Institut des Hautes Études de Défense Nationale",
-        "team": "2 software engineers",
-        "responsibilities": [
-          "Développement d'une application mobile hybride pour 2000+ membres de l'institution",
-          "Création d'un système de notifications push intelligent pour les événements institutionnels",
-          "Développement de plugins JavaScript natifs pour l'intégration aux systèmes legacy IHEDN",
-          "Implémentation d'un système de synchronisation offline permettant l'accès aux contenus sans connexion",
-          "Automatisation du processus de crawling et d'alimentation de la base de données mobile"
-        ],
-        "technologies": [
-          "Javascript",
-          "HTML",
-          "CSS",
-          "Webpack",
-          "API REST",
-          "NodeJs",
-          "VM aws",
-          "GIT",
-          "Swizi"
-        ]
-      },
-      {
         "role": "Développeur frontend (consultant)",
         "company": {
           "label": "CNFPT",
           "imageUrl": "/images/companies/cnfpt.webp"
         },
-        "period": "Mars 2019 - Juil 2019 · 5 mois",
+        "period": "Juillet 2018 - Juil 2019 · 1 an",
         "description": "Portail de formation - Centre National de la Fonction Publique Territoriale",
-        "team": "9 personnes (Développeurs + SM + Testeurs QA)",
+        "team": "9 Développeurs + SM + 2 Testeurs QA",
         "responsibilities": [
           "Refonte complète du portail de formation desservant 50 000+ fonctionnaires territoriaux",
           "Développement en méthodologie agile d'une interface responsive optimisée pour tous supports",
@@ -157,7 +128,7 @@
         },
         "period": "Juil 2018 - Jan 2019 · 7 mois",
         "description": "La solution SMART CO2 permet de générer une fiche gamme commerciale de véhicules optimisées, en terme de taux d'émission de CO2.",
-        "team": "5 personnes (Développeurs + SM + Testeurs QA)",
+        "team": "5 Développeurs + SM + 2 Testeurs QA",
         "responsibilities": [
           "Conception de l'architecture frontend d'une application stratégique d'analyse des émissions CO2",
           "Mise en place d'un système d'analyse de traffic (localisation, parcours utilisateurs, taille des écrans, ...)",
@@ -188,7 +159,7 @@
         "client": "Elsevier Masson",
         "period": "Nov 2017 - Jan 2018 · 3 mois",
         "description": "eBroncho - Une application hybride (Android, iOS) de Listing des Descripteurs de Maladies Respiratoires, servant comme référence dans le domaine de la bronchoscopie.",
-        "team": "4 personnes (Développeurs + SM + Testeurs QA)",
+        "team": "4 Développeurs + SM + 1 Testeur QA",
         "responsibilities": [
           "Intégration du design",
           "Création de nouveau composants",
@@ -216,7 +187,7 @@
         "client": "Eiffage construction",
         "period": "Mars 2017 - Nov 2017 · 9 mois",
         "description": "FinalSafe: une application de gestion des rapports de sécurité auprès des chantiers de construction de la société Eiffage.",
-        "team": "12 personnes (Développeurs + SM + Testeurs QA)",
+        "team": "12 Développeurs + SM + 2 Testeurs QA",
         "responsibilities": [
           "Intégration du design",
           "Création de nouveaux composants UI.",
@@ -245,7 +216,7 @@
         "client": "Chapeau de paille",
         "period": "Oct 2016 - Mars 2017 · 6 mois",
         "description": "Intranet chlorofil - espace de gestion des collectes, un lien d'échange et de collaboration des membres du GIE.",
-        "team": "7 personnes (Développeurs + SM + Testeurs QA)",
+        "team": "7 Développeurs + SM + 2 Testeurs QA",
         "responsibilities": [
           "Intégration du design",
           "Suivi et maintenance du design",
