@@ -14,8 +14,9 @@ export const onRequest = defineMiddleware(async (context, next) => {
         // Get the target language (first supported language or default to 'en')
         const targetLang = preferredLanguages.length > 0 ? preferredLanguages[0] : LanguageEnum.EN;
 
-        // Redirect to the language-specific path
-        return context.redirect(`/${targetLang}`);
+        // Redirect to the language-specific path, preserving query string (e.g. UTM params)
+        const search = context.url.search; // includes the leading "?" if present
+        return context.redirect(`/${targetLang}${search}`);
     }
 
     // Continue with the request for all other paths
