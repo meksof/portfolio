@@ -8,7 +8,8 @@ import { type Language } from '@utils/language';
 const APP_VERSION = pkg.version || '0.0.0';
 const { lang } = Astro.params;
 const i18n = await getContent(lang as Language)
-const smtServer = getEnvVar('SMT_SERVER')
+const umamiWebsiteId = getEnvVar('UMAMI_WEBSITE_ID')
+const umamiClientScriptUrl = getEnvVar('UMAMI_CLIENT_SCRIPT_URL')
 ---
 
 <html lang={lang}>
@@ -39,6 +40,14 @@ const smtServer = getEnvVar('SMT_SERVER')
             crossorigin
         />
         <link rel="stylesheet" href="/styles/global.css" />
+        <!-- Umami analytics -->
+        {umamiWebsiteId && umamiClientScriptUrl && (
+            <script
+                defer
+                src={umamiClientScriptUrl}
+                data-website-id={umamiWebsiteId}
+            ></script>
+        )}
     </head>
     <body class="bg-gray-100">
         <slot />
@@ -46,7 +55,5 @@ const smtServer = getEnvVar('SMT_SERVER')
         <div class="text-center text-gray-300 text-sm max-sm:bg-white ">
             v{ APP_VERSION }
         </div>
-        <input type="hidden" name="smt-server" value={smtServer}>
-        <script src="../scripts/tracker.ts"></script>
     </body>
 </html>
