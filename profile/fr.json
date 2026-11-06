@@ -7,7 +7,7 @@
     "fr": "Français"
   },
   "userCard": {
-    "title": "Développeur Frontend Senior",
+    "title": "Développeur Logiciel / Harnais & agents IA",
     "avatar": {
       "alt": "Un homme souriant avec des lunettes, vêtu d'un t-shirt noire.",
       "imageUrl": "/images/avatar.webp"
@@ -16,11 +16,11 @@
   },
   "bio": {
     "title": "Bio",
-    "intro": "Développeur Frontend Senior avec 10 ans d'expérience dans la création d'applications web scalables.",
+    "intro": "Spécialisé dans la conception d’applications web complexes et performantes en environnement Agile. ",
     "skills": [],
-    "techIntro": "Expert en architecture frontend moderne (Angular 17, TypeScript, NgRx) avec un focus sur l'expérience utilisateur et la performance.",
+    "techIntro": "Fort d’une solide maîtrise de TypeScript, Angular, je conçois des interfaces modulaires, ergonomiques et testées (Jasmine, Karma, Cypress).",
     "technologies": [],
-    "values": ""
+    "values": "Adepte du open source et des concepts autour de l’IA."
   },
   "projects": {
     "title": "Projets",
@@ -337,6 +337,13 @@
     "title": "Certifications",
     "showAll": "Afficher toutes les %i certifications",
     "items": [
+      {
+        "title": "Coding With AI - Planning To Production",
+        "issuer": {
+          "label": "Udemy",
+          "imageUrl": "/images/certifications/udemy.webp"
+        }
+      },
       {
         "title": "EF SET English Certificate 63/100 (C1 Advanced)",
         "issuer": {
