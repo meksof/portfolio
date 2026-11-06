@@ -7,7 +7,7 @@
     "fr": "Français"
   },
   "userCard": {
-    "title": "Senior Frontend Developer",
+    "title": "Software developer / Harness Engineer",
     "avatar": {
       "alt": "a man with glasses, wearing a black t-shirt, smiling at the camera",
       "imageUrl": "/images/avatar.webp"
@@ -16,21 +16,11 @@
   },
   "bio": {
     "title": "Bio",
-    "intro": "With 9 years' experience in the web, I help companies develop intuitive, user-friendly web interfaces. On a daily basis, I practice craftmanship.",
-    "skills": [
-      "I guarantee that the website is adapted to mobile screens, tablets and desktops.",
-      "I carry out unit tests",
-      "I create prototypes and wireframes."
-    ],
-    "techIntro": "I master the following technologies:",
-    "technologies": [
-      "Typescript / Angular",
-      "HTML / CSS",
-      "RxJS / NGRX",
-      "jasmine, Jest",
-      "figma, balsamiq, draw.io"
-    ],
-    "values": "Knowledge sharing, team spirit and mutual respect are the values I look for in a team culture."
+    "intro": "Specialized in designing complex, high-performance web applications in an Agile environment.",
+    "skills": [],
+    "techIntro": "With an expertise in TypeScript and Angular, I design modular, user-friendly, and thoroughly tested interfaces (Jasmine, Karma, Cypress).",
+    "technologies": [],
+    "values": "I am a proponent of open source and AI-related concepts."
   },
   "projects": {
     "title": "Projects",
@@ -383,6 +373,13 @@
     "title": "Certifications",
     "showAll": "Show all %i certifications",
     "items": [
+      {
+        "title": "Coding With AI - Planning To Production",
+        "issuer": {
+          "label": "Udemy",
+          "imageUrl": "/images/certifications/udemy.webp"
+        }
+      },
       {
         "title": "EF SET English Certificate 63/100 (C1 Advanced)",
         "issuer": {
